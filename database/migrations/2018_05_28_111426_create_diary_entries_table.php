@@ -14,21 +14,21 @@ class CreateDiaryEntriesTable extends Migration
     public function up()
     {
         Schema::create('diary_entries', function (Blueprint $table) {
-          $table->uuid('id')->primary();
-          $table->uuid('user_id');
-          $table->double('bodytemperature',3,1);
-          $table->string('mood');
-          $table->string('energy');
-          $table->boolean('cut');
-          $table->boolean('insectbite');
-          $table->boolean('skinrash');
-          $table->boolean('headache');
-          $table->boolean('shoulderpain');
-          $table->boolean('elbowpain');
-          $table->boolean('hippain');
-          $table->boolean('thighpain');
-          $table->boolean('kneepain');
-          $table->boolean('shinpain');
+          $table->increments('id');
+          $table->integer('user_id')->unsigned();
+          $table->double('bodytemp',3,1)->nullable();
+          $table->string('mood')->nullable();
+          $table->string('energy')->nullable();
+          $table->boolean('cut')->default(0);
+          $table->boolean('tickbite')->default(0);
+          $table->boolean('skinrash')->default(0);
+          $table->boolean('headache')->default(0);
+          $table->boolean('shoulderpain')->default(0);
+          $table->boolean('elbowpain')->default(0);
+          $table->boolean('hippain')->default(0);
+          $table->boolean('thighpain')->default(0);
+          $table->boolean('kneepain')->default(0);
+          $table->boolean('shinpain')->default(0);
           $table->timestamps();
         });
     }

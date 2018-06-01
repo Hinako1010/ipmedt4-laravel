@@ -7,9 +7,9 @@ use App\Traits\Uuids;
 
 class DiaryEntry extends Model
 {
-    use Uuids;
+    // use Uuids;
     protected $table = 'diary_entries';
 
-    public $incrementing = false;
-    
+    // public $incrementing = false;
+
 }

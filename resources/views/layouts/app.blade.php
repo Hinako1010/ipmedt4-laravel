@@ -12,8 +12,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!--scripts -->
+
+    <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/sendFormDataToServer.js"></script>
 </head>
 <body>
     <div id="app">
@@ -73,7 +75,10 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+          @include('inc.messages')
+          @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->

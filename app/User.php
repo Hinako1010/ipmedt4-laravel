@@ -9,7 +9,7 @@ use App\Traits\Uuids;
 class User extends Authenticatable
 {
     use Notifiable;
-    use Uuids;
+    // use Uuids;
 
     /**
      * The attributes that are mass assignable.
@@ -29,5 +29,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public $incrementing = false;
+    // public $incrementing = false;
 }
