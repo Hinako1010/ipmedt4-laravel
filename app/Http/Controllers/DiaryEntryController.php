@@ -41,7 +41,30 @@ class DiaryEntryController extends Controller
      */
     public function store(Request $request)
     {
-        return 123;
+      $userid = Auth::id();
+
+      // valideer form gegevens
+      $this->validate($request, [
+        'bodytemp' => 'default:37.0',
+        'cut' => 'default:0',
+        'tickbite' => 'default:0',
+        // 'skinrash' => 'default:0',
+        // 'headache' => 'default:0',
+        // 'shoulderpain' => 'default:0',
+        // 'elbowpain' => 'default:0',
+        // 'hippain' => 'default:0',
+        // 'thighpain' => 'default:0',
+        // 'kneepain' => 'default:0',
+        // 'shinpain' => 'default:0',
+      ]);
+
+      $entry = new DiaryEntry();
+      $entry->user_id = $userid;
+      $entry->bodytemp = $request->bodytemp;
+      $entry->cut = $request->cut;
+      $entry->tickbite = $request->tickbite;
+      $entry->save();
+      return view('diary.create_diary_entry')->with('success', 'De wijzigingen zijn opgeslagen.');
     }
 
     /**
