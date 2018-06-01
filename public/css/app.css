@@ -3,7 +3,41 @@
  * Bootstrap v3.3.7 (http: //getbootstrap.com)
  * Copyright 2011-2016 Twitter,  Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+*/
+
+
+/* Checkbox met image */
+ input[type=checkbox].css-checkbox{ display: none; }
+ .css-label{
+     padding-left: 20px;
+     display: flex;
+     width: 40px;
+     height: 40px;
+     /* background-image: url(http://vf.viresultra.com/wp-content/uploads/2017/04/Screen-Shot-2017-03-31-at-8.58.42-PM.png); */
+     background-repeat: no-repeat;
+     background-color: #E9EEF4;
+     background-size: contain;
+     background-position: center;
+     border: 1px dotted black;
+ }
+ input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 0;
+  border: 3px solid #2FBCDF;
+ }
+ /* images voor de checkboxen */
+ #headache_label {
+   background-image: url('/icons/head.png');
+
+ }
+ #shoulderpain_label {
+   background-image: url('/icons/shoulder.png');
+
+ }
+#elbowpain_label {
+  background-image: url('/icons/elbow.png');
+
+}
+
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {
     font-family: sans-serif;
