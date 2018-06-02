@@ -6,6 +6,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -51,6 +52,7 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            //'profilepic' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:8192',
         ]);
     }
 
@@ -62,9 +64,29 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        if($data['profilepic']){
+                
+            $imageName = time().'.'.request()->profilepic->getClientOriginalExtension();
+        
+              request()->profilepic->move(public_path('images'), $imageName);
+           $profilepic = $data['profilepic']; 
+        }else{
+            $profilepic = '';
+        }
+        if(isset($data['geslacht'])){
+            $geslacht = $data['geslacht'];
+        }else{
+            $geslacht = '';
+        }
+
         return User::create([
-            'name' => $data['name'],
+            'voornaam' => $data['name'],
+            'achternaam' => $data['achternaam'],
             'email' => $data['email'],
+            'geboortedatum' =>  $data['geboortedatum'],
+            'profilepic' =>  $profilepic,
+            'geslacht' => $geslacht,
             'password' => bcrypt($data['password']),
         ]);
     }

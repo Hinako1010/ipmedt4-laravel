@@ -15,6 +15,8 @@
                     @endif
 
                     You are logged in!
+
+                    <a href="/newentry">new entry</a>
                 </div>
             </div>
         </div>

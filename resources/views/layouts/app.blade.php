@@ -12,6 +12,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/sendFormDataToServer.js"></script>
 </head>
 <body>
     <div id="app">
@@ -48,7 +52,7 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->voornaam }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu">
@@ -71,7 +75,10 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+          @include('inc.messages')
+          @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->
