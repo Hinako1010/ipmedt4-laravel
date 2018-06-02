@@ -80,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Medisch Dagboek
+                    Medisch Dagboek2
                 </div>
 
                 <div class="links">
