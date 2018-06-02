@@ -80,13 +80,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Medisch Dagboek2
+                    Medisch Dagboek
                 </div>
 
                 <div class="links">
                 <a href="{{ url('') }}">NewHome</a>
                 <a href="{{ url('') }}">Overzicht</a>
-                <a href="{{ url('/newentry') }}">New entry</a>
                 <a href="{{ url('/newentry') }}">New entry</a>
                     <!-- <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
