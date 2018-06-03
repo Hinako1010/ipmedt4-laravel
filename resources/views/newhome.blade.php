@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <!-- <a href="{{ route('login') }}">Login</a> -->
-                    <button href="{{ route('login') }}" type="button" class="btn btn-default">Login</button>
+                    <button action="{{ route('login') }}" type="button" class="btn btn-primary">Login</button>
                     <a href="{{ route('register') }}">Register</a>
                     <!-- <a href="{{ url('/newhome') }}">NewHome</a>
                     <a href="{{ url('/overzicht') }}">Overzicht</a>
