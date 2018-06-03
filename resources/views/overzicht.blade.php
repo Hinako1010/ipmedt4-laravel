@@ -130,6 +130,10 @@
                 font-size:12px;
                 color: #777;
             }
+            .white {
+                color: #fff;
+                background-color: #fff;
+            }
 
             /* Highlight the "current" day */
             .days li .active {
@@ -142,7 +146,7 @@
     <body>
         <div class="">
             @if (Route::has('login'))
-                    <div class="top-right links">
+                    <div class="top-right links white">
                         @auth
                             <a href="{{ url('/home') }}">Home</a>
                         @else
