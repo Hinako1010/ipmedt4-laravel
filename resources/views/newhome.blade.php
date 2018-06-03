@@ -88,6 +88,9 @@
             .homeafb{
                 height: 90px;
             }
+            .homeafb2{
+                height: 20px;
+            }
         </style>
     </head>
     <body>
@@ -121,7 +124,7 @@
                       <button class="button">Registreer</button>
                     </form>
 
-                    <img class="" src="{{ URL::to('/icons/logo.png') }}">
+                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
                     <!-- <a href="{{ route('register') }}">Register</a> -->
                     <!-- <a href="{{ url('/newhome') }}">NewHome</a>
                     <a href="{{ url('/overzicht') }}">Overzicht</a>
