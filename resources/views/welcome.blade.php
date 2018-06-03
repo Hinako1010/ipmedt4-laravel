@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="links">
-                <!-- <a href="{{ route('newhome') }}">NewHome</a> -->
+                <a href="{{ route('') }}">NewHome</a>
                 <a href="{{ url('/kalender') }}">Overzicht</a>
                 <a href="{{ url('/newentry') }}">New entry</a>
                     <!-- <a href="https://laravel.com/docs">Documentation</a>
