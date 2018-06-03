@@ -44,13 +44,13 @@
             .month .prev {
                 float: left;
                 padding-top: 10px;
-                padding-left: 4px;
+                padding-left: 27px;
             }
 
             /* Next button */
             .month .next {
                 float: right;
-                padding-top: 10px;
+                padding-right: 27px;
             }
 
             /* Weekdays (Mon-Sun) */
@@ -79,7 +79,7 @@
                 display: inline-block;
                 width: 13.6%;
                 text-align: center;
-                margin-bottom: 5px;
+                margin-bottom: 12px;
                 font-size:22px;
                 color: #777;
             }
@@ -103,7 +103,7 @@
                 <ul>
                     <li class="prev">&#10094;</li>
                     <li class="next">&#10095;</li>
-                    <li>August<br><span>2017</span></li>
+                    <li>Juni<br><span>2018</span></li>
                 </ul>
                 </div>
 
