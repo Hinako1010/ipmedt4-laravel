@@ -68,11 +68,11 @@
                 color: #fff;
                 background-color: #FB785B;
                 border-color: #636b6f;
-                margin-top: 30px;
+                margin-top: 50px;
                 margin-bottom: 30px;
                 width: 326px;
                 height: 47px;
-                font-size: 25px;
+                font-size: 20px;
             }
             .button {
                 color: #fff;
@@ -80,7 +80,7 @@
                 border-color: #636b6f;
                 width: 326px;
                 height: 47px;
-                font-size: 25px;
+                font-size: 20px;
             }
         </style>
     </head>
