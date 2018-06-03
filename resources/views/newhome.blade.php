@@ -62,6 +62,11 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .button {
+                color: #fff;
+                background-color: #3097d1;
+                border-color: #2a88bd;
+            }
         </style>
     </head>
     <body>
@@ -86,9 +91,9 @@
 
                 <div class="links">
                     <form method="get" action="/login">
-                      <button class="btn btn-primary" >Login</button>
+                      <button class="button" >Login</button>
                     </form>
-                    <form method="get" action="/register" class="btn btn-primary">
+                    <form method="get" action="/register" class="button">
                       <button>Registreer</button>
                     </form>
                     <!-- <a href="{{ route('register') }}">Register</a> -->
