@@ -23,7 +23,7 @@
             .month {
                 padding: 70px 0px;
                 width: 100%;
-                background: #1abc9c;
+                background: #43C5E9;
                 text-align: center;
             }
 
@@ -35,7 +35,7 @@
 
             .month ul li {
                 color: white;
-                font-size: 24px;
+                font-size: 30px;
                 text-transform: uppercase;
                 letter-spacing: 3px;
             }
