@@ -69,14 +69,14 @@
                 border-color: #636b6f;
                 margin-bottom: 30px;
                 width: 326px;
-                height: 127px;
+                height: 47px;
             }
             .button {
                 color: #fff;
                 background-color: #43C5E9;
                 border-color: #636b6f;
                 width: 326px;
-                height: 127px;
+                height: 47px;
             }
         </style>
     </head>
