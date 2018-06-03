@@ -105,13 +105,10 @@
                  <li>Log out</li>
             </ul>
             <div class="month"> 
-               
-
                 <ul>
-                    <li class="prev">&#10094;</li>
-                    <li class="next">&#10095;</li>
-                    <li>Juni<br><span>2018</span></li>
-                    
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>August<br><span style="font-size:18px">2017</span></li>
                 </ul>
                 </div>
 
