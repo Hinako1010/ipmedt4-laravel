@@ -70,17 +70,18 @@
                 border-color: #636b6f;
                 margin-top: 30px;
                 margin-bottom: 30px;
-                width: 326px;
+                width: 226px;
                 height: 47px;
-                font-size: 20px;
+                font-size: 18px;
             }
             .button {
                 color: #fff;
                 background-color: #43C5E9;
                 border-color: #636b6f;
-                width: 326px;
+                margin-bottom: 30px;
+                width: 226px;
                 height: 47px;
-                font-size: 20px;
+                font-size: 18px;
             }
             .homeafb1{
                 height: 125px;
