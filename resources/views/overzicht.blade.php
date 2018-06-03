@@ -80,7 +80,7 @@
                 width: 13.6%;
                 text-align: center;
                 margin-bottom: 12px;
-                font-size:22px;
+                font-size:20px;
                 color: #777;
             }
 
