@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <form method="get" action="/login">
-                      <button>Login</button>
+                      <button class="btn btn-primary" >Login</button>
                     </form>
                     <form method="get" action="/register">
                       <button>Registreer</button>
