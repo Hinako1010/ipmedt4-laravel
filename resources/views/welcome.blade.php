@@ -85,7 +85,7 @@
 
                 <div class="links">
                 <a href="{{ url('') }}">NewHome</a>
-                <a href="{{ url('/kalender') }}">Overzicht</a>
+                <a href="{{ url('') }}">Overzicht</a>
                 <a href="{{ url('/newentry') }}">New entry</a>
                     <!-- <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

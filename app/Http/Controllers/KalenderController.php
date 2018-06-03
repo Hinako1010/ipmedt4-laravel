@@ -88,13 +88,4 @@ class DiaryEntryController extends Controller
     {
         //
     }
-    //geef home en overzicht/kalender view
-    public function geefhome()
-    {
-        return view('newhome');
-    }
-    public function geefoverzicht()
-    {
-        return view('overzicht');
-    }
 }
