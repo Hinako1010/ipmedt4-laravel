@@ -111,7 +111,6 @@
                     <li class="prev">&#10094;</li>
                     <li class="next">&#10095;</li>
                     <li>Juni</li>
-                    <li></li>
                     <li>2018</li>
                     <!-- <li>Juni<br><span>2018</span></li> -->
                     
