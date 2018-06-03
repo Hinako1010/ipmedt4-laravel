@@ -47,7 +47,7 @@
 
             .title {
                 font-size: 84px;
-                font-weight: 800;
+                font-weight: 600;
             }
 
             .links > a {
@@ -72,6 +72,8 @@
                 color: #fff;
                 background-color: #43C5E9;
                 border-color: #636b6f;
+                width: 126px;
+                height: 27px;
             }
         </style>
     </head>
