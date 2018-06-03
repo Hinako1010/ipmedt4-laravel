@@ -22,6 +22,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/newhome', 'DiaryEntryController@geefhome')->name('newhome');
+Route::get('/overzicht', 'DiaryEntryController@geefoverzicht')->name('overzicht');
+Route::get('/welcome', 'DiaryEntryController@geefwelcome')->name('welcome');
+
 Route::get('/newentry', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
 Route::post('/newentry_ajax', 'DiaryEntryController@store_ajax');

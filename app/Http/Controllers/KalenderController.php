@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\DiaryEntry;
-use
 
 class DiaryEntryController extends Controller
 {
@@ -42,47 +41,7 @@ class DiaryEntryController extends Controller
      */
     public function store(Request $request)
     {
-      $userid = Auth::id();
-
-      // valideer form gegevens
-      $this->validate($request, [
-        'bodytemp' => 'default:37.0',
-        'cut' => 'default:0',
-        'tickbite' => 'default:0',
-        // 'skinrash' => 'default:0',
-        // 'headache' => 'default:0',
-        // 'shoulderpain' => 'default:0',
-        // 'elbowpain' => 'default:0',
-        // 'hippain' => 'default:0',
-        // 'thighpain' => 'default:0',
-        // 'kneepain' => 'default:0',
-        // 'shinpain' => 'default:0',
-      ]);
-
-      $entry = new DiaryEntry();
-      $entry->user_id = $userid;
-      $entry->bodytemp = $request->bodytemp;
-      $entry->cut = $request->cut;
-      $entry->tickbite = $request->tickbite;
-      $entry->save();
-      return view('diary.create_diary_entry')->with('success', 'De wijzigingen zijn opgeslagen.');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store_ajax(Request $request)
-    {
-      // require_once('common.php');
-
-      // The front-end AJAX code sends everything whenever a key is pressed - so
-      // store it all. Normally you'd put the information into a database or
-      // in a file on disk.
-
-      return 123;
+        return 123;
     }
 
     /**
@@ -128,18 +87,5 @@ class DiaryEntryController extends Controller
     public function destroy($id)
     {
         //
-    }
-    //geef home en overzicht/kalender view
-    public function geefhome()
-    {
-        return view('newhome');
-    }
-    public function geefoverzicht()
-    {
-        return view('overzicht');
-    }
-    public function geefwelcome()
-    {
-        return view('welcome');
     }
 }
