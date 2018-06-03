@@ -62,7 +62,7 @@
 
             .weekdays li {
                 display: inline-block;
-                width: 14.6%;
+                width: 13.6%;
                 color: #666;
                 text-align: center;
             }
