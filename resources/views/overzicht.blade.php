@@ -65,7 +65,7 @@
 
             /* begin css kalender */
             ul {list-style-type: none;}
-            body {font-family: Verdana, sans-serif;}
+            /* body {font-family: Verdana, sans-serif;} */
 
             /* Month header */
             .month {
