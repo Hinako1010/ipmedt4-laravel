@@ -68,13 +68,15 @@
                 background-color: #FB785B;
                 border-color: #636b6f;
                 margin-bottom: 30px;
+                width: 326px;
+                height: 227px;
             }
             .button {
                 color: #fff;
                 background-color: #43C5E9;
                 border-color: #636b6f;
-                width: 126px;
-                height: 27px;
+                width: 326px;
+                height: 227px;
             }
         </style>
     </head>
