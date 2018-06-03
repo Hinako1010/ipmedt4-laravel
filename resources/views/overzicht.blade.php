@@ -35,7 +35,7 @@
 
             .month ul li {
                 color: white;
-                font-size: 20px;
+                font-size: 24px;
                 text-transform: uppercase;
                 letter-spacing: 3px;
             }
