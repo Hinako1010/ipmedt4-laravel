@@ -64,6 +64,7 @@
             .weekdays li {
                 display: inline-block;
                 width: 13.6%;
+                margin-bottom: 15px;
                 color: #666;
                 text-align: center;
             }
@@ -80,7 +81,7 @@
                 display: inline-block;
                 width: 13.6%;
                 text-align: center;
-                margin-bottom: 25px;
+                margin-bottom: 35px;
                 font-size:20px;
                 color: #777;
             }
