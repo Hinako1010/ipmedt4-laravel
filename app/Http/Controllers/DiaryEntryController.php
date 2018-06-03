@@ -97,4 +97,8 @@ class DiaryEntryController extends Controller
     {
         return view('overzicht');
     }
+    public function geefwelcome()
+    {
+        return view('welcome');
+    }
 }
