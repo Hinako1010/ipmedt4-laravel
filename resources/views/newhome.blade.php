@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Medisch Dagboek</title>
+        <title>newhome</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #9febf4;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -46,7 +46,9 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 64px;
+                font-weight: 600;
+               
             }
 
             .links > a {
@@ -62,6 +64,34 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .button1 {
+                color: #fff;
+                background-color: #FB785B;
+                border-color: #636b6f;
+                margin-top: 55px;
+                margin-bottom: 30px;
+                width: 226px;
+                height: 47px;
+                font-size: 18px;
+            }
+            .button {
+                color: #fff;
+                background-color: #43C5E9;
+                border-color: #636b6f;
+                margin-bottom: 30px;
+                width: 226px;
+                height: 47px;
+                font-size: 18px;
+            }
+            .homeafb1{
+                height: 125px;
+            }
+            .homeafb{
+                height: 90px;
+            }
+            .homeafb2{
+                height: 28px;
+            }
         </style>
     </head>
     <body>
@@ -71,22 +101,35 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <!-- <a href="{{ route('welcome') }}">Home</a>
                         <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('register') }}">Register</a> -->
                 
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Medisch Dagboek2
-                </div>
+                    <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
+                    <img class="homeafb" src="{{ URL::to('/icons/dokter.png') }}">
 
+                <div class="title m-b-md">
+                    Medisch Dagboek
+                </div>
+                    
                 <div class="links">
-                <a href="{{ url('/newhome') }}">NewHome</a>
-                <a href="{{ url('/overzicht') }}">Overzicht</a>
-                <a href="{{ url('/newentry') }}">New entry</a>
+                    <form method="get" action="/login">
+                      <button class="button1" >Login</button>
+                    </form>
+                    <form method="get" action="/register" >
+                      <button class="button">Registreer</button>
+                    </form>
+
+                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
+                    <!-- <a href="{{ route('register') }}">Register</a> -->
+                    <!-- <a href="{{ url('/newhome') }}">NewHome</a>
+                    <a href="{{ url('/overzicht') }}">Overzicht</a>
+                    <a href="{{ url('/newentry') }}">New entry</a> -->
                     <!-- <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
