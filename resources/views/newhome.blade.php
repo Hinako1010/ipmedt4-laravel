@@ -71,7 +71,7 @@
                 margin-bottom: 30px;
                 width: 326px;
                 height: 47px;
-                font-size: 44px;
+                font-size: 30px;
             }
             .button {
                 color: #fff;
@@ -79,7 +79,7 @@
                 border-color: #636b6f;
                 width: 326px;
                 height: 47px;
-                font-size: 44px;
+                font-size: 30px;
             }
         </style>
     </head>
