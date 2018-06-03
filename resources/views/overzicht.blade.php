@@ -140,55 +140,38 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('welcome') }}">Home</a>
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="month"> 
-                    <ul>
-                        <li class="prev">&#10094;</li>
-                        <li class="next">&#10095;</li>
-                        <li>August<br><span style="font-size:18px">2017</span></li>
-                    </ul>
-                    </div>
-
-                    <ul class="weekdays">
-                    <li>Mo</li>
-                    <li>Tu</li>
-                    <li>We</li>
-                    <li>Th</li>
-                    <li>Fr</li>
-                    <li>Sa</li>
-                    <li>Su</li>
-                    </ul>
-
-                    <ul class="days"> 
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li><span class="active">10</span></li>
-                    <li>11</li>
-                    ...etc
-                    </ul>
-                </div>
+        <div class="month"> 
+            <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>August<br><span style="font-size:18px">2017</span></li>
+            </ul>
             </div>
+
+            <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+            </ul>
+
+            <ul class="days"> 
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            ...etc
+            </ul>
         </div>
     </body>
 </html>
