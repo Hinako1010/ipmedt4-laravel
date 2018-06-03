@@ -132,7 +132,7 @@
                 <li>7</li>
                 <li>8</li>
                 <li>9</li>
-                <li><span class="active"><a href="{{ url('/newentry') }}"></a>10</span></li>
+                <li><span class="active"><a href="{{ url('/newentry') }}">10</a></span></li>
                 <li>11</li>
                 <li>12</li>
                 <li>13</li>
