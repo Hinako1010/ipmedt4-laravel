@@ -103,9 +103,8 @@
                 <div class="title m-b-md">
                     Medisch Dagboek
                 </div>
-                {{ asset('icons/head.png') }}
-                <img src="{{ URL::to('/icons/head.png') }}">
-
+                    <img src="{{ URL::to('/icons/dagboek.png') }}">
+                    <img src="{{ URL::to('/icons/dokter.png') }}">
                 <div class="links">
                     <form method="get" action="/login">
                       <button class="button1" >Login</button>
