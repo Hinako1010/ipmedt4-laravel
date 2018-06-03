@@ -85,12 +85,13 @@
                 </div>
 
                 <div class="links">
-                    <!-- <a href="{{ route('login') }}">Login</a> -->
-                    <button action="{{ route('login') }}" type="button" class="btn btn-primary">Login</button>
                     <form method="get" action="/login">
-                      <button>LOGIN</button>
+                      <button>Login</button>
                     </form>
-                    <a href="{{ route('register') }}">Register</a>
+                    <form method="get" action="/register">
+                      <button>Registreer</button>
+                    </form>
+                    <!-- <a href="{{ route('register') }}">Register</a> -->
                     <!-- <a href="{{ url('/newhome') }}">NewHome</a>
                     <a href="{{ url('/overzicht') }}">Overzicht</a>
                     <a href="{{ url('/newentry') }}">New entry</a> -->
