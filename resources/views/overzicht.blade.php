@@ -35,7 +35,8 @@
 
             .month ul li {
                 color: white;
-                font-size: 30px;
+                font-size: 36px;
+                font-weight: 100;
                 text-transform: uppercase;
                 letter-spacing: 3px;
             }
@@ -109,7 +110,7 @@
                 <ul>
                     <li class="prev">&#10094;</li>
                     <li class="next">&#10095;</li>
-                    <li>  Juni<br><span>2018</span></li>
+                    <li>Juni<br><span>2018</span></li>
                 </ul>
                 </div>
 
