@@ -58,7 +58,7 @@
             .weekdays {
                 margin: 0;
                 padding: 10px 0;
-                background-color:#ddd;
+                background-color:#FB785B;
             }
 
             .weekdays li {
@@ -89,7 +89,7 @@
             /* Highlight the "current" day */
             .days li .active {
                 padding: 5px;
-                background: #FB785B;
+                background: #43C5E9;
                 color: white !important
             }
         </style>
