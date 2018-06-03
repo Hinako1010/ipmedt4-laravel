@@ -104,7 +104,7 @@
                     Medisch Dagboek
                 </div>
                 {{ asset('icons/head.png') }}
-                <img src="{{ $head }}">
+                <img src="{{ URL::to('/icons/head.png') }}">
 
                 <div class="links">
                     <form method="get" action="/login">
