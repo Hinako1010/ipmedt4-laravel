@@ -88,7 +88,7 @@
                     <form method="get" action="/login">
                       <button class="btn btn-primary" >Login</button>
                     </form>
-                    <form method="get" action="/register">
+                    <form method="get" action="/register" class="btn btn-primary">
                       <button>Registreer</button>
                     </form>
                     <!-- <a href="{{ route('register') }}">Register</a> -->
