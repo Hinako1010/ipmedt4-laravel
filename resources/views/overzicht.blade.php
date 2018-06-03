@@ -58,7 +58,7 @@
             .weekdays {
                 margin: 0;
                 padding: 10px 0;
-                background-color:#FB785B;
+                background-color:#ddd;
             }
 
             .weekdays li {
