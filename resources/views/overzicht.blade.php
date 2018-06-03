@@ -96,6 +96,8 @@
         <div class="">
             <ul class="weekdays">
                  <li>Kalender</li>
+                 <li>Kalender</li>
+                 <li>Kalender</li>
             </ul>
             <div class="month"> 
                
