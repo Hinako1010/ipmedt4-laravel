@@ -44,6 +44,7 @@
             .month .prev {
                 float: left;
                 padding-top: 10px;
+                padding-left: 4px;
             }
 
             /* Next button */
@@ -61,7 +62,7 @@
 
             .weekdays li {
                 display: inline-block;
-                width: 13.6%;
+                width: 14.6%;
                 color: #666;
                 text-align: center;
             }
