@@ -12,7 +12,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< Updated upstream
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+=======
+
+    {{-- Javascript --}}
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/sendFormDataToServer.js"></script>
+>>>>>>> Stashed changes
 </head>
 <body>
     <div id="app">
