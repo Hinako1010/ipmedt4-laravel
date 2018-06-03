@@ -65,12 +65,12 @@
             .button1 {
                 color: #fff;
                 background-color: #FB785B;
-                border-color: #2a88bd;
+                border-color: #636b6f;
             }
             .button {
                 color: #fff;
                 background-color: #43C5E9;
-                border-color: #2a88bd;
+                border-color: #636b6f;
             }
         </style>
     </head>
