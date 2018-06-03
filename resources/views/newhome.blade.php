@@ -67,15 +67,14 @@
                 color: #fff;
                 background-color: #FB785B;
                 border-color: #636b6f;
+                margin-bottom: 30px;
             }
             .button {
                 color: #fff;
                 background-color: #43C5E9;
                 border-color: #636b6f;
                 width: 126px;
-                margin-bottom: 30px;
                 height: 27px;
-                line-height: 40px;
             }
         </style>
     </head>
