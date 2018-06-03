@@ -95,9 +95,12 @@
     <body>
         <div class="">
             <ul class="weekdays">
-                 <li>Kalender<a href="{{ url('/newhome') }}">NewHome</a></li>
+                 <li><a href="{{ url('/newhome') }}">Home</a></li>
+                 <li></li>
+                 <li></li>
                  <li>Kalender</li>
-                 <li>Kalender</li>
+                 <li></li>
+                 <li>Log out</li>
             </ul>
             <div class="month"> 
                
@@ -129,7 +132,7 @@
                 <li>7</li>
                 <li>8</li>
                 <li>9</li>
-                <li><span class="active">10</span></li>
+                <li><span class="active"><a href="{{ url('/newentry') }}"></a>10</span></li>
                 <li>11</li>
                 <li>12</li>
                 <li>13</li>
