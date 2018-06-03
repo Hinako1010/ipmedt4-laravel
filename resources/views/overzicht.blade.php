@@ -21,7 +21,7 @@
 
             /* Month header */
             .month {
-                padding: 70px 25px;
+                padding: 70px 0px;
                 width: 100%;
                 background: #1abc9c;
                 text-align: center;
