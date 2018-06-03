@@ -103,6 +103,8 @@
                 <div class="title m-b-md">
                     Medisch Dagboek
                 </div>
+                {{ asset('icons/head.png') }}
+                <img src="{{ $head.png }}">
 
                 <div class="links">
                     <form method="get" action="/login">
