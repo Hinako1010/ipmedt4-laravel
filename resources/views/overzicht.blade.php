@@ -89,7 +89,7 @@
             /* Highlight the "current" day */
             .days li .active {
                 padding: 5px;
-                background: #43C5E9;
+                background: #FB785B;
                 color: white !important
             }
         </style>
