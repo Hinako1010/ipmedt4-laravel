@@ -44,7 +44,7 @@
             /* Previous button inside month header */
             .month .prev {
                 float: left;
-                padding-top: 10px;
+                /* padding-top: 10px; */
                 padding-left: 27px;
             }
 
@@ -108,7 +108,7 @@
                 <ul>
                 <li class="prev">&#10094;</li>
                 <li class="next">&#10095;</li>
-                <li>August<br><span style="font-size:18px">2017</span></li>
+                <li>August<br><span>2017</span></li>
                 </ul>
                 </div>
 
