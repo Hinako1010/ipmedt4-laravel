@@ -108,7 +108,7 @@
                 <ul>
                 <li class="prev">&#10094;</li>
                 <li class="next">&#10095;</li>
-                <li>August<br><span>2017</span></li>
+                <li>Juni<br><span>2018</span></li>
                 </ul>
                 </div>
 
