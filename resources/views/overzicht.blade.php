@@ -80,7 +80,7 @@
                 display: inline-block;
                 width: 13.6%;
                 text-align: center;
-                margin-bottom: 12px;
+                margin-bottom: 18px;
                 font-size:20px;
                 color: #777;
             }
