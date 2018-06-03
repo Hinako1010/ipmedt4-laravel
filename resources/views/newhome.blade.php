@@ -81,13 +81,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    New Home
+                    Medisch Dagboek
                 </div>
 
                 <div class="links">
-                <a href="{{ url('/newhome') }}">NewHome</a>
-                <a href="{{ url('/overzicht') }}">Overzicht</a>
-                <a href="{{ url('/newentry') }}">New entry</a>
+                    <!-- <a href="{{ route('login') }}">Login</a> -->
+                    <button href="{{ route('login') }}" type="button" class="btn btn-default">Login</button>
+                    <a href="{{ route('register') }}">Register</a>
+                    <!-- <a href="{{ url('/newhome') }}">NewHome</a>
+                    <a href="{{ url('/overzicht') }}">Overzicht</a>
+                    <a href="{{ url('/newentry') }}">New entry</a> -->
                     <!-- <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
