@@ -82,8 +82,11 @@
                 height: 47px;
                 font-size: 20px;
             }
+            .homeafb1{
+                height: 125px;
+            }
             .homeafb{
-                height: 100px;
+                height: 90px;
             }
         </style>
     </head>
@@ -103,7 +106,7 @@
             @endif
 
             <div class="content">
-                    <img class="homeafb" src="{{ URL::to('/icons/dagboek.png') }}">
+                    <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
                     <img class="homeafb" src="{{ URL::to('/icons/dokter.png') }}">
 
                 <div class="title m-b-md">
