@@ -130,10 +130,6 @@
                 font-size:12px;
                 color: #777;
             }
-            .white {
-                color: #fff;
-                background-color: #fff;
-            }
 
             /* Highlight the "current" day */
             .days li .active {
@@ -145,22 +141,11 @@
     </head>
     <body>
         <div class="">
-            @if (Route::has('login'))
-                    <div class="top-right links white">
-                        @auth
-                            <a href="{{ url('/home') }}">Home</a>
-                        @else
-                            <a href="{{ route('login') }}">Login</a>
-                            <a href="{{ route('register') }}">Register</a>
-                    
-                        @endauth
-                    </div>
-                @endif
             <div class="month"> 
                 <ul>
                     <li class="prev">&#10094;</li>
                     <li class="next">&#10095;</li>
-                    <li>August<br><span style="font-size:18px">2017</span></li>
+                    <li>August<br><span>2017</span></li>
                 </ul>
                 </div>
 
