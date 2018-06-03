@@ -79,7 +79,7 @@
                 width: 13.6%;
                 text-align: center;
                 margin-bottom: 5px;
-                font-size:12px;
+                font-size:22px;
                 color: #777;
             }
 
@@ -93,10 +93,11 @@
     </head>
     <body>
         <div class="">
+            <ul class="weekdays">
+                 <li>Kalender</li>
+            </ul>
             <div class="month"> 
-                <ul class="weekdays">
-                    <li>Kalender</li>
-                </ul>
+               
 
                 <ul>
                     <li class="prev">&#10094;</li>
