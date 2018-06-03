@@ -48,7 +48,7 @@
             .title {
                 font-size: 84px;
                 font-weight: 600;
-                margin-bottom: 30px;
+               
             }
 
             .links > a {
@@ -68,10 +68,11 @@
                 color: #fff;
                 background-color: #FB785B;
                 border-color: #636b6f;
+                margin-top: 30px;
                 margin-bottom: 30px;
                 width: 326px;
                 height: 47px;
-                font-size: 30px;
+                font-size: 25px;
             }
             .button {
                 color: #fff;
@@ -79,7 +80,7 @@
                 border-color: #636b6f;
                 width: 326px;
                 height: 47px;
-                font-size: 30px;
+                font-size: 25px;
             }
         </style>
     </head>
