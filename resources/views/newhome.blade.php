@@ -82,6 +82,9 @@
                 height: 47px;
                 font-size: 20px;
             }
+            .homeafb{
+                height: 100px;
+            }
         </style>
     </head>
     <body>
@@ -100,11 +103,13 @@
             @endif
 
             <div class="content">
+                    <img class="homeafb" src="{{ URL::to('/icons/dagboek.png') }}">
+                    <img class="homeafb" src="{{ URL::to('/icons/dokter.png') }}">
+
                 <div class="title m-b-md">
                     Medisch Dagboek
                 </div>
-                    <img src="{{ URL::to('/icons/dagboek.png') }}">
-                    <img src="{{ URL::to('/icons/dokter.png') }}">
+                    
                 <div class="links">
                     <form method="get" action="/login">
                       <button class="button1" >Login</button>
