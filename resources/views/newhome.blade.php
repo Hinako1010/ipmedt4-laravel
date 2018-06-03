@@ -46,7 +46,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 64px;
                 font-weight: 600;
                
             }
@@ -68,7 +68,7 @@
                 color: #fff;
                 background-color: #FB785B;
                 border-color: #636b6f;
-                margin-top: 50px;
+                margin-top: 30px;
                 margin-bottom: 30px;
                 width: 326px;
                 height: 47px;
@@ -120,6 +120,8 @@
                     <form method="get" action="/register" >
                       <button class="button">Registreer</button>
                     </form>
+
+                    <img class="" src="{{ URL::to('/icons/logo.png') }}">
                     <!-- <a href="{{ route('register') }}">Register</a> -->
                     <!-- <a href="{{ url('/newhome') }}">NewHome</a>
                     <a href="{{ url('/overzicht') }}">Overzicht</a>
