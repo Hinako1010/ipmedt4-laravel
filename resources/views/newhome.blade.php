@@ -104,7 +104,7 @@
                     Medisch Dagboek
                 </div>
                 {{ asset('icons/head.png') }}
-                <img src="{{ $head.png }}">
+                <img src="{{ $head }}">
 
                 <div class="links">
                     <form method="get" action="/login">
