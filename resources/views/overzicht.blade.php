@@ -95,7 +95,7 @@
     <body>
         <div class="">
             <ul class="weekdays">
-                 <li>Kalender</li>
+                 <li>Kalender<a href="{{ url('/newhome') }}">NewHome</a></li>
                  <li>Kalender</li>
                  <li>Kalender</li>
             </ul>
@@ -105,7 +105,7 @@
                 <ul>
                     <li class="prev">&#10094;</li>
                     <li class="next">&#10095;</li>
-                    <li>Juni<br><span>2018</span></li>
+                    <li>  Juni<br><span>2018</span></li>
                 </ul>
                 </div>
 
