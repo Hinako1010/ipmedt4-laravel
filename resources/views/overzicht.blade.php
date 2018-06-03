@@ -61,7 +61,7 @@
 
             .weekdays li {
                 display: inline-block;
-                width: 15.6%;
+                width: 13.6%;
                 color: #666;
                 text-align: center;
             }
@@ -95,6 +95,7 @@
         <div class="">
             <div class="month"> 
                 <ul class="weekdays">
+                    <li>Kalender</li>
                 </ul>
 
                 <ul>
