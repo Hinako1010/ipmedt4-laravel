@@ -28,7 +28,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/newhome', 'DiaryEntryController@geefhome')->name('newhome');
+Route::get('/newhome', 'DiaryEntryController@geefhome');
 Route::get('/overzicht', 'DiaryEntryController@geefoverzicht')->name('overzicht');
 Route::get('/welcome', 'DiaryEntryController@geefwelcome')->name('welcome');
 
