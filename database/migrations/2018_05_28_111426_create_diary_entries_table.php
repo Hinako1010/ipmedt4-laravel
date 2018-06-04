@@ -14,8 +14,9 @@ class CreateDiaryEntriesTable extends Migration
     public function up()
     {
         Schema::create('diary_entries', function (Blueprint $table) {
-          $table->increments('id');
-          $table->integer('user_id')->unsigned();
+          $table->boolean('skinrash')->default(0);
+          $table->uuid('id')->primary();
+          $table->uuid('user_id');
           $table->double('bodytemp',3,1)->nullable();
           $table->string('mood')->nullable();
           $table->string('energy')->nullable();

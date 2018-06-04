@@ -1,3 +1,4 @@
+
 // Create the TIMERS object
 TIMERS = {};
 
@@ -24,6 +25,8 @@ function saveformdata()
     // Create the new timer - which runs after a delay of a second
     TIMERS.SAVEDATA = setTimeout(function ()
     {
+        console.log("wopwowpwop");
+
         // Trigger the AJAX GET request that passes the information
         // to the server (using jQuery)
         $.ajax({
@@ -40,7 +43,6 @@ function saveformdata()
           .animate({
             opacity: 1
           });
-          console.log("hello i work");
         }});
 
         // Fade out the note after 5 seconds
