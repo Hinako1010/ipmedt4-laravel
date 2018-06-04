@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\DiaryEntry;
-
+use Auth;
 
 class DiaryEntryController extends Controller
 {
@@ -30,8 +30,9 @@ class DiaryEntryController extends Controller
         // $carbon = $carbon->toDateString();
         $day = $carbon->format('d');
         $month = $carbon->format('M');
+        $year = $carbon->format('y');
         $diaryentry = new DiaryEntry();
-        return view('diary.create_diary_entry')->with(['daynr'=>$day, 'monthstr'=>$month, 'diaryentry'=>$diaryentry]);
+        return view('diary.create_diary_entry')->with(['daynr'=>$day, 'monthstr'=>$month, 'year'=>$year, 'diaryentry'=>$diaryentry]);
     }
 
     /**
@@ -49,14 +50,14 @@ class DiaryEntryController extends Controller
         'bodytemp' => 'default:37.0',
         'cut' => 'default:0',
         'tickbite' => 'default:0',
-        // 'skinrash' => 'default:0',
-        // 'headache' => 'default:0',
-        // 'shoulderpain' => 'default:0',
-        // 'elbowpain' => 'default:0',
-        // 'hippain' => 'default:0',
-        // 'thighpain' => 'default:0',
-        // 'kneepain' => 'default:0',
-        // 'shinpain' => 'default:0',
+        'skinrash' => 'default:0',
+        'headache' => 'default:0',
+        'shoulderpain' => 'default:0',
+        'elbowpain' => 'default:0',
+        'hippain' => 'default:0',
+        'thighpain' => 'default:0',
+        'kneepain' => 'default:0',
+        'shinpain' => 'default:0',
       ]);
 
       $entry = new DiaryEntry();
@@ -64,8 +65,15 @@ class DiaryEntryController extends Controller
       $entry->bodytemp = $request->bodytemp;
       $entry->cut = $request->cut;
       $entry->tickbite = $request->tickbite;
+      $entry->skinrash = $request->skinrash;
+      $entry->headache = $request->headache;
+      $entry->shoulderpain = $request->shoulderpain;
+      $entry->elbowpain = $request->elbowpain;
+      $entry->hippain = $request->hippain;
+      $entry->thighpain = $request->thighpain;
+      $entry->kneepain = $request->kneepain;
+      $entry->shinpain = $request->shinpain;
       $entry->save();
-      return view('diary.create_diary_entry')->with('success', 'De wijzigingen zijn opgeslagen.');
       return redirect('/newentry')->with('success', 'De wijzigingen zijn opgeslagen.');
     }
 

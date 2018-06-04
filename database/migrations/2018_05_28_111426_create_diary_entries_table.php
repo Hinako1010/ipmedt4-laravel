@@ -19,16 +19,16 @@ class CreateDiaryEntriesTable extends Migration
           $table->double('bodytemp',3,1)->nullable();
           $table->string('mood')->nullable();
           $table->string('energy')->nullable();
-          $table->boolean('cut')->default(0);
-          $table->boolean('tickbite')->default(0);
-          $table->boolean('skinrash')->default(0);
-          $table->boolean('headache')->default(0);
-          $table->boolean('shoulderpain')->default(0);
-          $table->boolean('elbowpain')->default(0);
-          $table->boolean('hippain')->default(0);
-          $table->boolean('thighpain')->default(0);
-          $table->boolean('kneepain')->default(0);
-          $table->boolean('shinpain')->default(0);
+          $table->boolean('cut')->nullable();
+          $table->boolean('tickbite')->nullable();
+          $table->boolean('skinrash')->nullable();
+          $table->boolean('headache')->nullable();
+          $table->boolean('shoulderpain')->nullable();
+          $table->boolean('elbowpain')->nullable();
+          $table->boolean('hippain')->nullable();
+          $table->boolean('thighpain')->nullable();
+          $table->boolean('kneepain')->nullable();
+          $table->boolean('shinpain')->nullable();
           $table->timestamps();
         });
     }
