@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-        // Fade out the note after 5 seconds
-=======
+
 // Create the TIMERS object
 TIMERS = {};
 
@@ -61,4 +59,3 @@ function saveformdata()
         TIMERS.SAVEDATA = null;
     }, 1000);
 }
->>>>>>> Stashed changes

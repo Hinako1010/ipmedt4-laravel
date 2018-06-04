@@ -65,11 +65,8 @@ class DiaryEntryController extends Controller
       $entry->cut = $request->cut;
       $entry->tickbite = $request->tickbite;
       $entry->save();
-<<<<<<< Updated upstream
       return view('diary.create_diary_entry')->with('success', 'De wijzigingen zijn opgeslagen.');
-=======
       return redirect('/newentry')->with('success', 'De wijzigingen zijn opgeslagen.');
->>>>>>> Stashed changes
     }
 
     /**
