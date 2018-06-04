@@ -117,6 +117,16 @@
                 <div class="title m-b-md">
                     Medisch Dagboek
                 </div>
+
+                <div class="infotekst">
+                    <p>
+                        Welkom bij Medisch Dagboek!<br>
+                        Hierin kun je al je medische gegevens bijhouden, om zo <br>
+                        je huisarts te kunnen helpen van opimaler consult <br>
+                        door je gegevens te exporteren naar pdf. <br>
+                    </p>
+                </div>
+
                     
                 <div class="links">
                     <form method="get" action="/login">
