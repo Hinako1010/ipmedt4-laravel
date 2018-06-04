@@ -88,23 +88,6 @@ class DiaryEntryController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store_ajax(Request $request)
-    {
-      // require_once('common.php');
-
-      // The front-end AJAX code sends everything whenever a key is pressed - so
-      // store it all. Normally you'd put the information into a database or
-      // in a file on disk.
-
-      return 123;
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
