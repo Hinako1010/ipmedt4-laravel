@@ -9,6 +9,12 @@ use Auth;
 
 class DiaryEntryController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +22,11 @@ class DiaryEntryController extends Controller
      */
     public function index()
     {
-        //
+        $carbon = new Carbon();
+
+        $day = $carbon->format('d');
+        $month = $carbon->format('M');
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
     }
 
     /**
@@ -32,7 +42,6 @@ class DiaryEntryController extends Controller
         $month = $carbon->format('M');
         $year = $carbon->format('y');
         $diaryentry = new DiaryEntry();
-        return 123;
         return view('diary.create_diary_entry')->with(['daynr'=>$day, 'monthstr'=>$month, 'year'=>$year, 'diaryentry'=>$diaryentry]);
     }
 
@@ -75,7 +84,7 @@ class DiaryEntryController extends Controller
       $entry->kneepain = $request->kneepain;
       $entry->shinpain = $request->shinpain;
       $entry->save();
-      return redirect('/newentry')->with('success', 'De wijzigingen zijn opgeslagen.');
+      return redirect('/home')->with('success', 'De wijzigingen zijn opgeslagen.');
     }
 
     /**
@@ -139,22 +148,5 @@ class DiaryEntryController extends Controller
     {
         //
     }
-    //geef home en overzicht/kalender view
-    public function geefhome()
-    {
-        return view('newhome');
-    }
-    
-    public function geefoverzicht()
-    {
-        $carbon = new Carbon();
 
-        $day = $carbon->format('d');
-        $month = $carbon->format('M');
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
-    }
-    public function geefwelcome()
-    {
-        return view('welcome');
-    }
 }
