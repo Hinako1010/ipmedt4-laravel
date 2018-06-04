@@ -65,7 +65,8 @@
             .weekdays li {
                 display: inline-block;
                 width: 13%;
-                margin-bottom: 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
                 color: #666;
                 text-align: center;
             }
@@ -98,13 +99,13 @@
     <body>
         <div class="">
             <ul class="weekdays">
-                 <li><a href="{{ url('/newhome') }}">Home</a></li>
+                 <li><a href="{{ url('/index') }}">PDF</a></li>
                  <li></li>
                  <li></li>
                  <li>Kalender</li>
                  <li></li>
                  <li></li>
-                 <li>Log out</li>
+                 <li><a href="{{ url('/newhome') }}">Logout</a></li>
             </ul>
             <div class="month"> 
                 <ul>
@@ -161,7 +162,6 @@
         </div>
     </body>
 </html>
-@endsection
 @else
 <script type="text/javascript">
     window.location = "/login";

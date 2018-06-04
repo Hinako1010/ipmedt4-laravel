@@ -32,7 +32,6 @@ class DiaryEntryController extends Controller
         $month = $carbon->format('M');
         $year = $carbon->format('y');
         $diaryentry = new DiaryEntry();
-        return 123;
         return view('diary.create_diary_entry')->with(['daynr'=>$day, 'monthstr'=>$month, 'year'=>$year, 'diaryentry'=>$diaryentry]);
     }
 
@@ -144,7 +143,7 @@ class DiaryEntryController extends Controller
     {
         return view('newhome');
     }
-    
+
     public function geefoverzicht()
     {
         $carbon = new Carbon();
