@@ -118,7 +118,6 @@
                     Medisch Dagboek
                 </div>
 
-<<<<<<< HEAD
                 <div class="infotekst">
                     <p>
                         Welkom bij Medisch Dagboek!<br>
@@ -126,11 +125,8 @@
                         je huisarts te kunnen helpen van opimaler consult <br>
                         door je gegevens te exporteren naar pdf. <br>
                     </p>
-                </div>
+                </div>                  
 
-                    
-=======
->>>>>>> 90f84bab7484a3d5f9299897d094cf1c7e2a63f0
                 <div class="links">
                     <form method="get" action="/login">
                       <button class="button1" >Login</button>
