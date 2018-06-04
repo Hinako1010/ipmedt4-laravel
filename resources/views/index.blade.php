@@ -5,13 +5,15 @@
     <th>ID</th>
     <th>Voornaam</th>
 
-    <th>Action</th>
+    <th>Email</th>
+  <th>PDF</th>
   </thead>
   <tbody>
     @foreach($users as $user)
     <tr>
       <td>{{$user->id}}</td>
-      <td>{{$user->voornaam}}</td>
+      <td>{{$user->voornaam}} {{$user->achternaam}}</td>
+      <td>{{$user->email}}</td>
       <!-- <td>{{$user->street_address}}</td>
       <td>{{$user->city}}</td>
       <td>{{$user->zip_code}}</td> -->
