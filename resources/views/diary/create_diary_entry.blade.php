@@ -18,6 +18,7 @@
       <div class="form-group col-xs-4">
         <input id="tickbite" type="checkbox" class="css-checkbox" onchange="saveformdata()">
         <label id="tickbite_label" for="tickbite" class="css-label"></label>
+      </div>
       <div class="form-group col-xs-4">
         <input id="skinrash" type="checkbox" class="css-checkbox">
         <label id="skinrash_label" for="skinrash" class="css-label"></label>

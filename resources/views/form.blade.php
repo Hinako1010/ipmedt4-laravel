@@ -17,7 +17,7 @@
       <input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
     </div>
 
-    <div class="form-group"> 
+    <div class="form-group">
       <label for="zip_id" class="control-label">Zip Code</label>
       <input type="text" class="form-control" id="zip_id" name="zip_code" placeholder="#####">
     </div> -->
