@@ -14,9 +14,7 @@ class CreateDiaryEntriesTable extends Migration
     public function up()
     {
         Schema::create('diary_entries', function (Blueprint $table) {
-<<<<<<< Updated upstream
           $table->boolean('skinrash')->default(0);
-=======
           $table->uuid('id')->primary();
           $table->uuid('user_id');
           $table->double('bodytemp',3,1)->nullable();
@@ -32,7 +30,6 @@ class CreateDiaryEntriesTable extends Migration
           $table->boolean('thighpain')->default(0);
           $table->boolean('kneepain')->default(0);
           $table->boolean('shinpain')->default(0);
->>>>>>> Stashed changes
           $table->timestamps();
         });
     }
