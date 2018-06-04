@@ -65,7 +65,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        if($data['profilepic']){
+        if(isset($data['profilepic'])){
                 
             $imageName = time().'.'.request()->profilepic->getClientOriginalExtension();
         
