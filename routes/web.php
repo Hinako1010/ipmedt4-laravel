@@ -34,7 +34,6 @@ Route::get('/welcome', 'DiaryEntryController@geefwelcome')->name('welcome');
 
 Route::get('/newentry', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
-Route::post('/newentry_ajax', 'DiaryEntryController@store_ajax');
 
 Route::post('submitForm','UserDetailController@store');
 Route::get('/index','UserDetailController@index');

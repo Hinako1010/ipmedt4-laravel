@@ -11,8 +11,8 @@ input[type=checkbox].css-checkbox{ display: none; }
 .css-label{
    padding-left: 20px;
    display: flex;
-   width: 40px;
-   height: 40px;
+   width: 20vw;
+   height: 20vw;
    /* background-image: url(http://vf.viresultra.com/wp-content/uploads/2017/04/Screen-Shot-2017-03-31-at-8.58.42-PM.png); */
    background-repeat: no-repeat;
    background-color: #E9EEF4;
