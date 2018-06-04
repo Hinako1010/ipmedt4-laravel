@@ -1,3 +1,4 @@
+@if(Auth::check())
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -63,7 +64,7 @@
 
             .weekdays li {
                 display: inline-block;
-                width: 13.6%;
+                width: 13%;
                 margin-bottom: 15px;
                 color: #666;
                 text-align: center;
@@ -79,7 +80,7 @@
             .days li {
                 list-style-type: none;
                 display: inline-block;
-                width: 13.6%;
+                width: 13%;
                 text-align: center;
                 margin-bottom: 35px;
                 font-size:20px;
@@ -109,7 +110,7 @@
                 <ul>
                 <li class="prev">&#10094;</li>
                 <li class="next">&#10095;</li>
-                <li>Juni<br><span>2018</span></li>
+                <li>{{$monthstr}}<br><span>2018</span></li>
                 </ul>
                 </div>
 
@@ -160,3 +161,9 @@
         </div>
     </body>
 </html>
+@endsection
+@else
+<script type="text/javascript">
+    window.location = "/login";
+</script>
+@endif

@@ -95,7 +95,11 @@ class DiaryEntryController extends Controller
     }
     public function geefoverzicht()
     {
-        return view('overzicht');
+        $carbon = new Carbon();
+
+        $day = $carbon->format('d');
+        $month = $carbon->format('M');
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
     }
     public function geefwelcome()
     {
