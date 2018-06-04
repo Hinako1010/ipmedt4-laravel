@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\UserDetail;
+use PDF;
 
 class UserDetailController extends Controller
 {
@@ -12,9 +13,9 @@ class UserDetailController extends Controller
 
       $user = new UserDetail([
         'voornaam' => $request->get('voornaam'),
-        'street_address' => $request->get('street_address'),
-        'city' => $request->get('city'),
-        'zip_code' => $request->get('zip_code')
+        // 'street_address' => $request->get('street_address'),
+        // 'city' => $request->get('city'),
+        // 'zip_code' => $request->get('zip_code')
       ]);
 
       $user->save();

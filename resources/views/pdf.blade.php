@@ -10,7 +10,7 @@
         <td>
           {{$user->voornaam}}
         </td>
-        <td>
+        <!-- <td>
           {{$user->street_address}}
         </td>
       </tr>
@@ -20,7 +20,7 @@
         </td>
         <td>
           {{$user->zip_code}}
-        </td>
+        </td> -->
       </tr>
     </table>
   </body>
