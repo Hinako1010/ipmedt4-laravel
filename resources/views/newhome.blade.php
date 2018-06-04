@@ -49,7 +49,7 @@
             .title {
                 font-size: 64px;
                 font-weight: 600;
-               
+
             }
 
             .links > a {
@@ -102,10 +102,10 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <!-- <a href="{{ route('welcome') }}">Home</a>
+                        <!-- <a href="{{ route('calendar') }}">Home</a>
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a> -->
-                
+
                     @endauth
                 </div>
             @endif
@@ -118,6 +118,7 @@
                     Medisch Dagboek
                 </div>
 
+<<<<<<< HEAD
                 <div class="infotekst">
                     <p>
                         Welkom bij Medisch Dagboek!<br>
@@ -128,6 +129,8 @@
                 </div>
 
                     
+=======
+>>>>>>> 90f84bab7484a3d5f9299897d094cf1c7e2a63f0
                 <div class="links">
                     <form method="get" action="/login">
                       <button class="button1" >Login</button>

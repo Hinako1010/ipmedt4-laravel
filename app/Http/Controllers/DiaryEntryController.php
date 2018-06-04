@@ -9,6 +9,12 @@ use Auth;
 
 class DiaryEntryController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +22,11 @@ class DiaryEntryController extends Controller
      */
     public function index()
     {
-        //
+        $carbon = new Carbon();
+
+        $day = $carbon->format('d');
+        $month = $carbon->format('M');
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
     }
 
     /**
@@ -74,24 +84,7 @@ class DiaryEntryController extends Controller
       $entry->kneepain = $request->kneepain;
       $entry->shinpain = $request->shinpain;
       $entry->save();
-      return redirect('/newentry')->with('success', 'De wijzigingen zijn opgeslagen.');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store_ajax(Request $request)
-    {
-      // require_once('common.php');
-
-      // The front-end AJAX code sends everything whenever a key is pressed - so
-      // store it all. Normally you'd put the information into a database or
-      // in a file on disk.
-
-      return 123;
+      return redirect('/home')->with('success', 'De wijzigingen zijn opgeslagen.');
     }
 
     /**
@@ -138,22 +131,5 @@ class DiaryEntryController extends Controller
     {
         //
     }
-    //geef home en overzicht/kalender view
-    public function geefhome()
-    {
-        return view('newhome');
-    }
 
-    public function geefoverzicht()
-    {
-        $carbon = new Carbon();
-
-        $day = $carbon->format('d');
-        $month = $carbon->format('M');
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
-    }
-    public function geefwelcome()
-    {
-        return view('welcome');
-    }
 }

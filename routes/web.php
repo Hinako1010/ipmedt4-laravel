@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/kalender', function () {
-    return view('kalender');
-});
+Route::get('/', 'HomeController@index');
+
 
 Route::get('/pdftest', function () {
     return view('form');
@@ -26,16 +22,12 @@ Route::get('/pdftest', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/newhome', 'DiaryEntryController@geefhome');
-Route::get('/overzicht', 'DiaryEntryController@geefoverzicht')->name('overzicht');
-Route::get('/welcome', 'DiaryEntryController@geefwelcome')->name('welcome');
+Route::get('/home', 'DiaryEntryController@index')->name('calendar');
 
 Route::get('/newentry', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
 
 Route::post('submitForm','UserDetailController@store');
-Route::get('/index','UserDetailController@index');
+Route::get('/pdf','UserDetailController@index');
 
 Route::get('/downloadPDF/{id}','UserDetailController@downloadPDF');
