@@ -161,7 +161,6 @@
         </div>
     </body>
 </html>
-@endsection
 @else
 <script type="text/javascript">
     window.location = "/login";
