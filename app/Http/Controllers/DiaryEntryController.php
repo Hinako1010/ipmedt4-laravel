@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\DiaryEntry;
-use
+
 
 class DiaryEntryController extends Controller
 {
