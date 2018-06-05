@@ -99,7 +99,7 @@
     <body>
       <div class="">
           <ul class="weekdays">
-               <li><a href="{{ url('/index') }}">PDF</a></li>
+               <li><a href="{{ url('/pdf') }}">PDF</a></li>
                <li></li>
                <li></li>
                <li>Kalender</li>
