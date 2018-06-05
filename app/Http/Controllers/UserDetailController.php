@@ -13,9 +13,6 @@ class UserDetailController extends Controller
 
       $user = new UserDetail([
         'voornaam' => $request->get('voornaam'),
-        // 'street_address' => $request->get('street_address'),
-        // 'city' => $request->get('city'),
-        // 'zip_code' => $request->get('zip_code')
       ]);
 
       $user->save();
@@ -32,7 +29,10 @@ class UserDetailController extends Controller
       $user = UserDetail::find($id);
 
       $pdf = PDF::loadView('pdf', compact('user'));
-      return $pdf->download('invoice.pdf');
+//      return $pdf->download('symptomen_overzicht.pdf');
+      return $pdf->stream('symptomen_overzicht.pdf');
 
+//      return view('bugfix', compact('user'));
+//
 }
 }
