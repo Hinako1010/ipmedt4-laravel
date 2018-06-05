@@ -29,7 +29,7 @@ Route::get('/newentry', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
 
 Route::post('submitForm','UserDetailController@store');
-Route::get('/index','UserDetailController@index');
+Route::get('/pdf','UserDetailController@index');
 
 //download pdf
 Route::get('/downloadPDF/{id}','UserDetailController@downloadPDF');

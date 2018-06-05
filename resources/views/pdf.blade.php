@@ -8,19 +8,16 @@
     <table class="table table-bordered">
       <tr>
         <td>
-          {{$user->voornaam}}
-        </td>
-        <!-- <td>
-          {{$user->street_address}}
+          {{$user->voornaam}} {{$user->achternaam}}
         </td>
       </tr>
       <tr>
-        <td>
-          {{$user->city}}
-        </td>
-        <td>
-          {{$user->zip_code}}
-        </td> -->
+      <td>
+        {{$user->email}}
+      </td>
+      </tr>
+      <tr>
+        <img src="https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png">
       </tr>
     </table>
   </body>

@@ -69,7 +69,7 @@
                 color: #fff;
                 background-color: #FB785B;
                 border-color: #636b6f;
-                margin-top: 55px;
+                margin-top: 35px;
                 margin-bottom: 30px;
                 width: 226px;
                 height: 47px;
@@ -92,6 +92,11 @@
             }
             .homeafb2{
                 height: 28px;
+                position: absolute;
+                right: 0px;
+                margin-top: -10px;
+                padding-right: 10px;
+
             }
         </style>
     </head>
@@ -111,6 +116,9 @@
             @endif
 
             <div class="content">
+                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
+                    <br>
+                    <br>
                     <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
                     <img class="homeafb" src="{{ URL::to('/icons/dokter.png') }}">
 
@@ -118,24 +126,22 @@
                     Medisch Dagboek
                 </div>
 
+                <div class="infotekst">
+                    <p>
+                        Welkom bij Medisch Dagboek!<br>
+                        Hierin kun je al je medische gegevens bijhouden, <br>
+                        om zo je huisarts te kunnen helpen van opimaler <br>
+                        consult door je gegevens te versturen. <br>
+                    </p>
+                </div>                  
+
                 <div class="links">
                     <form method="get" action="/login">
                       <button class="button1" >Login</button>
                     </form>
                     <form method="get" action="/register" >
-                      <button class="button">Registreer</button>
+                      <button class="button">Of meld je aan</button>
                     </form>
-
-                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
-                    <!-- <a href="{{ route('register') }}">Register</a> -->
-                    <!-- <a href="{{ url('/newhome') }}">NewHome</a>
-                    <a href="{{ url('/overzicht') }}">Overzicht</a>
-                    <a href="{{ url('/newentry') }}">New entry</a> -->
-                    <!-- <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
                 </div>
             </div>
         </div>
