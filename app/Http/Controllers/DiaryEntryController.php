@@ -36,6 +36,7 @@ class DiaryEntryController extends Controller
      */
     public function create()
     {
+        // if clicked date == today
         $carbon = new Carbon();
         // $carbon = $carbon->toDateString();
         $day = $carbon->format('d');
@@ -43,6 +44,13 @@ class DiaryEntryController extends Controller
         $year = $carbon->format('y');
         $diaryentry = new DiaryEntry();
         return view('diary.create_diary_entry')->with(['daynr'=>$day, 'monthstr'=>$month, 'year'=>$year, 'diaryentry'=>$diaryentry]);
+
+        // if clicked day != today && no entry yet
+          // make new diary entry with given date
+
+        // if already existing $entry
+          // get date
+          // return redirect (/editentry/{date})
     }
 
     /**
