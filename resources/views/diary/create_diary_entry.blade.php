@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  <span class="btn btn-default">Terug naar kalender</span>
   <h1>Vandaag: {{$daynr}} {{$monthstr}}</h1>
 
   <span id="savednote" style="opacity:0;">Info saved</span><br>
@@ -57,6 +58,6 @@
       </div>
     </div>
 
-    {{Form::submit('submit')}}
+    {{Form::submit('Opslaan', ['class'=>'btn btn-success'])}}
   {!!Form::close() !!}
 @endsection
