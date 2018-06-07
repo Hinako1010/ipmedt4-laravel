@@ -93,9 +93,9 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-6 col-md-offset-8">
                                 <button type="submit" class="btn btn-primary">
-                                    Aanmelden
+                                    Registreren
                                 </button>
                             </div>
                         </div>
