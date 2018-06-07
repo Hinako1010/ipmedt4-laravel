@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-6 col-md-offset-3">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Onthoud mij
@@ -53,14 +53,15 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
+                            <div class="col-md-8 col-md-offset-6">
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    Wachtwoord vergeten?
+                                </a>
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Wachtwoord vergeten?
-                                </a>
+                                
                             </div>
                         </div>
                     </form>
