@@ -10,6 +10,10 @@ class DiaryEntry extends Model
     // use Uuids;
     protected $table = 'diary_entries';
 
+    protected $fillable = [
+      'user_id', 'bodytemp', 'cut', 'tickbite', 'skinrash', 'headache', 'shoulderpain', 'elbowpain', 'hippain', 'thighpain', 'kneepain', 'shinpain',
+    ];
+
     // public $incrementing = false;
 
 }
