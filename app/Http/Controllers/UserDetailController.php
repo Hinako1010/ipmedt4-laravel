@@ -33,14 +33,13 @@ class UserDetailController extends Controller
 
     public function downloadPDF($id){
       $user = UserDetail::find($id);
-      $idee = 1;
-      $cache = null;
-      $grafiek = self::maakGrafiek($id);
-      $grafiek->Render("image.png");
+      //$idee = 1;
+      //$cache = null;
+      //$grafiek = self::maakGrafiek($id);
+      //$grafiek->Render("image.png");
       //$cache->writeToCache($idee,$grafiek);
-      $user->$grafiek;
-      $pdf = PDF::loadView('pdf', compact('user', 'grafiek'));
-
+      //$user->$grafiek;
+      $pdf = PDF::loadView('pdf', compact('user'));
       return $pdf->stream('symptomen_overzicht.pdf');
 
 //      return view('bugfix', compact('user'));
