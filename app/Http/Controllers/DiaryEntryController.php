@@ -15,6 +15,15 @@ class DiaryEntryController extends Controller
         $this->middleware('auth');
     }
 
+    public function checkIfExists(){
+      // if exists then edit
+      return 123;
+
+      //otherwise create
+
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -78,19 +87,20 @@ class DiaryEntryController extends Controller
         'shinpain' => 'default:0',
       ]);
 
-      $entry = new DiaryEntry();
-      $entry->user_id = $userid;
-      $entry->bodytemp = $request->bodytemp;
-      $entry->cut = $request->cut;
-      $entry->tickbite = $request->tickbite;
-      $entry->skinrash = $request->skinrash;
-      $entry->headache = $request->headache;
-      $entry->shoulderpain = $request->shoulderpain;
-      $entry->elbowpain = $request->elbowpain;
-      $entry->hippain = $request->hippain;
-      $entry->thighpain = $request->thighpain;
-      $entry->kneepain = $request->kneepain;
-      $entry->shinpain = $request->shinpain;
+      $entry = new DiaryEntry([
+        'user_id' => $userid,
+        'bodytemp' => $request->bodytemp,
+        'cut' => $request->cut,
+        'tickbite' => $request->tickbite,
+        'skinrash' => $request->skinrash,
+        'headache' => $request->headache,
+        'shoulderpain' => $request->shoulderpain,
+        'elbowpain' => $request->elbowpain,
+        'hippain' => $request->hippain,
+        'thighpain' => $request->thighpain,
+        'kneepain' => $request->kneepain,
+        'shinpain' => $request->shinpain,
+      ]);
       $entry->save();
       return redirect('/home')->with('success', 'De wijzigingen zijn opgeslagen.');
     }
@@ -103,7 +113,7 @@ class DiaryEntryController extends Controller
      */
     public function show($id)
     {
-        //
+        $entry = DiaryEntry::find($id);
     }
 
     /**

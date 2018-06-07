@@ -30,4 +30,8 @@ class User extends Authenticatable
     ];
 
     // public $incrementing = false;
+
+    public function diaryEntries(){
+      return $this->hasMany('App\DiaryEntry');
+    }
 }

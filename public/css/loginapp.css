@@ -1,4 +1,4 @@
-/* body {
+body {
     margin: 0;
     background-color: #9febf4 !important;
 }
@@ -6,4 +6,30 @@
     color: #333;
     background-color: #FB785B!important;
     border-color: #d3e0e9;
-} */
+}
+
+@media (min-width: 992px){
+    .col-md-offset-3 {
+        margin-left: 33% !important;
+    }
+    .col-md-offset-6 {
+        margin-left: 48% !important;
+    }
+}
+@media (max-width:492px) {
+    .col-md-offset-3 {
+        margin-left: 03%;
+    }
+    .col-md-offset-6 {
+        margin-left: 8%;
+    }
+}
+@media (max-width: 992px){
+    .col-md-offset-8 {
+        margin-left: 7.66666667%!important;
+}
+@media (max-width: 492px){
+    .col-md-offset-8 {
+        margin-left: 56.66666667%!important;
+    }
+}
