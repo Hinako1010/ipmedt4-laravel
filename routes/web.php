@@ -11,23 +11,20 @@
 |
 */
 
+Auth::routes();
 Route::get('/', 'HomeController@index');
 
 
-Route::get('/pdftest', function () {
-    return view('form');
-});
 
-
-
-Auth::routes();
 
 Route::get('/home', 'DiaryEntryController@index')->name('calendar');
 
+// nieuwe dagboek entry
 Route::get('/newentry', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
 
 Route::post('submitForm','UserDetailController@store');
 Route::get('/pdf','UserDetailController@index');
 
+//download pdf
 Route::get('/downloadPDF/{id}','UserDetailController@downloadPDF');

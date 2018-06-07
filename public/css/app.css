@@ -9,20 +9,19 @@
 /* Checkbox met image */
 input[type=checkbox].css-checkbox{ display: none; }
 .css-label{
-   padding-left: 20px;
-   display: flex;
-   width: 20vw;
-   height: 20vw;
-   /* background-image: url(http://vf.viresultra.com/wp-content/uploads/2017/04/Screen-Shot-2017-03-31-at-8.58.42-PM.png); */
-   background-repeat: no-repeat;
-   background-color: #E9EEF4;
-   background-size: contain;
-   background-position: center;
-   border: 1px dotted black;
+  padding-left: 20px;
+  display: flex;
+  width: 20vw;
+  height: 20vw;
+  /* background-image: url(http://vf.viresultra.com/wp-content/uploads/2017/04/Screen-Shot-2017-03-31-at-8.58.42-PM.png); */
+  background-repeat: no-repeat;
+  background-color: #E9EEF4;
+  background-size: cover;
+  background-position: center;
 }
 input[type=checkbox].css-checkbox:checked + label.css-label {
-background-position: 0 0;
-border: 3px solid #2FBCDF;
+  background-position: 0 0;
+  border: 3px solid #2FBCDF;
 }
 
  /* images voor de checkboxen */
