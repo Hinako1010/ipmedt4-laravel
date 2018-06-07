@@ -18,7 +18,7 @@
     </td>
   </tr>
   <tr>
-    <img src="https://www.webpagefx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png">
+    <img src="{{$grafiek->writeToCache("image.png")}}">
   </tr>
 </table>
 </body>

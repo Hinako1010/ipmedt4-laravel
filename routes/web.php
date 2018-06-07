@@ -15,11 +15,6 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 
 
-Route::get('/pdftest', function () {
-    return view('form');
-});
-
-
 
 
 Route::get('/home', 'DiaryEntryController@index')->name('calendar');
