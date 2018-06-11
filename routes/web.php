@@ -17,8 +17,11 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'DiaryEntryController@index')->name('calendar');
 
+Route::get('/users', 'UserDetailController@index');
+
 // nieuwe dagboek entry
 Route::get('/newentry', 'DiaryEntryController@create');
+Route::get('/newentry/create', 'DiaryEntryController@create');
 Route::post('/newentry', 'DiaryEntryController@store');
 
 Route::post('submitForm','UserDetailController@store');
