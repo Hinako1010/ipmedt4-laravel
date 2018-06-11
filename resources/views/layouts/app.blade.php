@@ -20,6 +20,9 @@
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
+                @if(Session::has('flash_message'))
+                    <div class="alert alert-success"><em> {!! session('flash_message') !!}</em></div>
+                @endif
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->

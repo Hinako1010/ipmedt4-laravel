@@ -1,4 +1,5 @@
 @if(Auth::check())
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -97,6 +98,12 @@
         </style>
     </head>
     <body>
+    @if(Session::has('msg'))
+        <div class="alert alert-info">
+            <a class="close" data-dismiss="alert">×</a>
+            <strong>Heads Up!</strong> {!!Session::get('msg')!!}
+        </div>
+    @endif
       <div class="">
           <ul class="weekdays">
                <li><a href="{{ url('/pdf') }}">PDF</a></li>

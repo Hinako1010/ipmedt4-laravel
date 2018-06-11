@@ -15,7 +15,11 @@ class HomeController extends Controller
     public function index()
     {
         if (Auth::user()){
+        
+          \Session::flash('msg', 'Changes Saved.' );
           return redirect('/home');
+
+
         }
         else {
           return view('newhome');

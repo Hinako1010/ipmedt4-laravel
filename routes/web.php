@@ -15,8 +15,6 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 
 
-
-
 Route::get('/home', 'DiaryEntryController@index')->name('calendar');
 
 // nieuwe dagboek entry
