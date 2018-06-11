@@ -18,49 +18,6 @@
 
     </head>
     <body>
-<<<<<<< HEAD
-    @if(Session::has('msg'))
-        <div class="alert alert-info">
-            <a class="close" data-dismiss="alert">×</a>
-            <strong>Heads Up!</strong> {!!Session::get('msg')!!}
-        </div>
-    @endif
-      <div class="">
-          <ul class="weekdays">
-               <li><a href="{{ url('/pdf') }}">PDF</a></li>
-               <li></li>
-               <li></li>
-               <li>Kalender</li>
-               <li></li>
-               <li></li>
-               <li><a href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                   Logout
-               </a>
-
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                   {{ csrf_field() }}
-               </form></li>
-          </ul>
-          <div class="month">
-              <ul>
-              <li class="prev">&#10094;</li>
-              <li class="next">&#10095;</li>
-              <li>{{$monthstr}}<br><span>2018</span></li>
-              </ul>
-              </div>
-
-              <ul class="weekdays">
-              <li>Mo</li>
-              <li>Tu</li>
-              <li>We</li>
-              <li>Th</li>
-              <li>Fr</li>
-              <li>Sa</li>
-              <li>Su</li>
-              </ul>
-=======
       @include('inc.messages')
 
       <div id="calendar">
@@ -81,7 +38,6 @@
           </div>
         </div>
       </div>
->>>>>>> 3c9665f8f0b25649d33062ea3596f028bf17ee38
 
 
     </body>
