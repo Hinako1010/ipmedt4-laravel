@@ -50,6 +50,7 @@ ul {
   position: relative;
   background-color: #2ECC71;
   color: white;
+  text-align: 
 }
 
 .year {
@@ -91,4 +92,21 @@ ul {
 
 .notToday {
   background-color: #eee;
+}
+
+/* LEFT SIDE CONTENT */
+.date {
+  text-align: center;
+}
+hr {
+  border-color: #E8E8E8;
+  position: relative;
+  top: 10%;
+  width: 75%;
+}
+#daynr {
+  font-size: 10em;
+}
+#monthstr {
+  font-size: 5em;
 }

@@ -35,7 +35,14 @@ class DiaryEntryController extends Controller
 
         $day = $carbon->format('d');
         $month = $carbon->format('M');
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month]);
+
+        $userid = Auth::id();
+        $diaryentry = DiaryEntry::where('user_id', $userid)->get()->last();
+
+        $symptoms =[];
+
+
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms]);
     }
 
     /**
