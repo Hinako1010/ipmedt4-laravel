@@ -39,8 +39,10 @@ class DiaryEntryController extends Controller
         $userid = Auth::id();
         $diaryentry = DiaryEntry::where('user_id', $userid)->get()->last();
 
-        $symptoms =[];
-
+        $symptoms = array();
+        if($diaryentry != null){
+          $symptoms = $diaryentry->getAttributes();
+        }
 
         return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms]);
     }
@@ -81,17 +83,17 @@ class DiaryEntryController extends Controller
 
       // valideer form gegevens
       $this->validate($request, [
-        'bodytemp' => 'default:37.0',
-        'cut' => 'default:0',
-        'tickbite' => 'default:0',
-        'skinrash' => 'default:0',
-        'headache' => 'default:0',
-        'shoulderpain' => 'default:0',
-        'elbowpain' => 'default:0',
-        'hippain' => 'default:0',
-        'thighpain' => 'default:0',
-        'kneepain' => 'default:0',
-        'shinpain' => 'default:0',
+        // 'bodytemp' => 'default:37.0',
+        // 'cut' => 'default:0',
+        // 'tickbite' => 'default:0',
+        // 'skinrash' => 'default:0',
+        // 'headache' => 'default:0',
+        // 'shoulderpain' => 'default:0',
+        // 'elbowpain' => 'default:0',
+        // 'hippain' => 'default:0',
+        // 'thighpain' => 'default:0',
+        // 'kneepain' => 'default:0',
+        // 'shinpain' => 'default:0',
       ]);
 
       $entry = new DiaryEntry([

@@ -16,19 +16,19 @@ class CreateDiaryEntriesTable extends Migration
         Schema::create('diary_entries', function (Blueprint $table) {
           $table->increments('id');
           $table->integer('user_id')->unsigned();
-          $table->double('bodytemp',3,1)->nullable();
-          $table->string('mood')->nullable();
-          $table->string('energy')->nullable();
-          $table->boolean('cut')->nullable();
-          $table->boolean('tickbite')->nullable();
-          $table->boolean('skinrash')->nullable();
-          $table->boolean('headache')->nullable();
-          $table->boolean('shoulderpain')->nullable();
-          $table->boolean('elbowpain')->nullable();
-          $table->boolean('hippain')->nullable();
-          $table->boolean('thighpain')->nullable();
-          $table->boolean('kneepain')->nullable();
-          $table->boolean('shinpain')->nullable();
+          $table->double('bodytemp',3,1)->default(37.0)->nullable();
+          $table->string('mood')->default(0)->nullable();
+          $table->string('energy')->default(0)->nullable();
+          $table->boolean('cut')->default(0)->nullable();
+          $table->boolean('tickbite')->default(0)->nullable();
+          $table->boolean('skinrash')->default(0)->nullable();
+          $table->boolean('headache')->default(0)->nullable();
+          $table->boolean('shoulderpain')->default(0)->nullable();
+          $table->boolean('elbowpain')->default(0)->nullable();
+          $table->boolean('hippain')->default(0)->nullable();
+          $table->boolean('thighpain')->default(0)->nullable();
+          $table->boolean('kneepain')->default(0)->nullable();
+          $table->boolean('shinpain')->default(0)->nullable();
           $table->timestamps();
         });
     }

@@ -42,15 +42,13 @@ ul {
   left: 30%;
   top: 0;
   position: absolute;
-  padding: 5%;
 }
 .calendar-left {
   width: 30%;
   height: 100%;
   position: relative;
-  background-color: #2ECC71;
+  background-color: #9febf4;
   color: white;
-  text-align: 
 }
 
 .year {
@@ -64,7 +62,7 @@ ul {
 }
 
 .dayNow{
-   background-color: #2ECC71;
+   background-color: #FB785B;
  }
 
 .row td{
@@ -94,6 +92,7 @@ ul {
   background-color: #eee;
 }
 
+
 /* LEFT SIDE CONTENT */
 .date {
   text-align: center;
@@ -109,4 +108,55 @@ hr {
 }
 #monthstr {
   font-size: 5em;
+}
+
+.calendar-left ul {
+  padding: 0;
+}
+#symptomlist {
+  width: 100%;
+}
+#symptomlist li{
+  display: inline-block;
+  width: 8vw;
+  height: 8vw;
+}
+/* Checkbox met image */
+.css-label{
+  background-repeat: no-repeat;
+  background-color: #E9EEF4;
+  background-size: cover;
+  background-position: center;
+}
+
+ /* images voor de checkboxen */
+#cut_label {
+  background-image: url('/icons/wound.png');
+}
+#tickbite_label {
+  background-image: url('/icons/tickbite.png');
+}
+#skinrash_label {
+  background-image: url('/icons/skin_rash.png');
+}
+ #headache_label {
+   background-image: url('/icons/head.png');
+}
+ #shoulderpain_label {
+   background-image: url('/icons/shoulder.png');
+}
+#elbowpain_label {
+  background-image: url('/icons/elbow.png');
+}
+#hippain_label {
+  background-image: url('/icons/hip.png');
+}
+#thighpain_label {
+  background-image: url('/icons/thigh.png');
+}
+#kneepain_label {
+  background-image: url('/icons/knee.png');
+}
+#shinpain_label {
+  background-image: url('/icons/shin.png');
 }

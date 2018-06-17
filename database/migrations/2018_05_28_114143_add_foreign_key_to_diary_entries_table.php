@@ -15,8 +15,8 @@ class AddForeignKeyToDiaryEntriesTable extends Migration
     {
         Schema::table('diary_entries', function($table){
           $table->foreign('user_id')->references('id')->on('users');
-          $table->foreign('mood')->references('intensity')->on('intensity_scale');
-          $table->foreign('energy')->references('intensity')->on('intensity_scale');
+          // $table->foreign('mood')->references('intensity')->on('intensity_scale');
+          // $table->foreign('energy')->references('intensity')->on('intensity_scale');
         });
     }
 
@@ -29,8 +29,8 @@ class AddForeignKeyToDiaryEntriesTable extends Migration
     {
       Schema::table('diary_entries', function($table){
         $table->dropForeign('diary_entries_user_id_foreign');
-        $table->dropForeign('diary_entries_mood_foreign');
-        $table->dropForeign('diary_entries_energy_foreign');
+        // $table->dropForeign('diary_entries_mood_foreign');
+        // $table->dropForeign('diary_entries_energy_foreign');
       });
     }
 }

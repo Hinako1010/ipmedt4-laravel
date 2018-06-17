@@ -32,14 +32,18 @@
 
             <hr>
 
-            <div class="symptoms">
-              <h2>Bodytemp: {{$symptoms->bodytemp}}</h2>
-              <ul>
-
+            <div class="symptoms container">
+              <h2>Bodytemp:</h2>
+              <ul id="symptomlist">
+                @foreach($symptoms as $key => $value)
+                  @if ($value == 1)
+                    <li id="{{$key}}_label" class="css-label"></li>
+                  @endif
+                @endforeach
               </ul>
             </div>
 
-            <div>
+            <div class="container">
               <ul>
                 <li><a href="{{ url('/pdf') }}">PDF</a></li>
                 <li><a href="{{ route('logout') }}"
@@ -52,9 +56,9 @@
                 </form></li>
               </ul>
             </div>
+          </div>
         </div>
       </div>
-
     </body>
 </html>
 @else

@@ -67,8 +67,8 @@ function displayCalendar(){
     // if counter is current day.
     // highlight current day using the CSS defined in header.
     if (counter == day){
-        htmlContent +="<td class='dayNow' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"#0EAC31\"; this.style.color=\"#000\";' "+
-        "onMouseOut='this.style.background=\"#2ECC71\"; this.style.color=\"#000\";'>"+counter+"</td>";
+        htmlContent +="<td class='dayNow' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"#ef6647\"; this.style.color=\"#000\";' "+
+        "onMouseOut='this.style.background=\"#FB785B\"; this.style.color=\"#000\";'>"+counter+"</td>";
     }else if (counter < day){
         htmlContent +="<td class='monthNow notToday' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"yellow\"'"+
         " onMouseOut='this.style.background=\"#eee\"'>"+counter+"</td>";

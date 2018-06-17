@@ -16,4 +16,12 @@ class DiaryEntry extends Model
 
     // public $incrementing = false;
 
+    public function iterateVisible(){
+      $array = array();
+      foreach($this as $key => $value) {
+        $array[$key] = $value;
+      }
+      return $array;
+    }
+
 }
