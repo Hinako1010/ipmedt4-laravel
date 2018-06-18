@@ -8,14 +8,20 @@
     <style>
         body {
             background-color: none;
+            border-width: 1px;
+            border-style: dotted;
         }
         #grafieken{
             margin-bottom: 8px;
         }
+        #tabelletje{
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
-<table class="table table-bordered">
+<table id="tabelletje" class="table table-bordered">
   <tr>
     <td>
       {{$user->voornaam}} {{$user->achternaam}}
