@@ -63,7 +63,7 @@
           </div>
           <div class="options container">
             <ul>
-              <a href="{{ url('/pdf') }}"><li class="well well-sm">PDF</li></a>
+              <a href="/pdf/{{$userid}}"><li class="well well-sm">PDF</li></a>
               <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();"><li class="well well-sm">

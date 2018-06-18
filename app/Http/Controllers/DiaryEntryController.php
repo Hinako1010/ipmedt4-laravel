@@ -44,7 +44,7 @@ class DiaryEntryController extends Controller
           $symptoms = $diaryentry->getAttributes();
         }
 
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms]);
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms, 'userid'=>$userid]);
     }
 
     /**
