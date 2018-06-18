@@ -22,7 +22,6 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   background-position: 0 0;
   border: 3px solid #2FBCDF;
 }
-
  /* images voor de checkboxen */
 #cut_label {
   background-image: url('/icons/wound.png');
@@ -53,6 +52,11 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 #shinpain_label {
   background-image: url('/icons/shin.png');
+}
+
+#notes {
+    width: 40vw;
+    height: 10vw;
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html {

@@ -29,6 +29,7 @@ class CreateDiaryEntriesTable extends Migration
           $table->boolean('thighpain')->default(0)->nullable();
           $table->boolean('kneepain')->default(0)->nullable();
           $table->boolean('shinpain')->default(0)->nullable();
+          $table->string('notes')->nullable();
           $table->timestamps();
         });
     }
