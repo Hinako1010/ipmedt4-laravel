@@ -33,29 +33,46 @@
             <hr>
 
             <div class="symptoms container">
-              <h2>Bodytemp:</h2>
               <ul id="symptomlist">
+                @foreach($symptoms as $key => $value)
+                  @if($key == "bodytemp")
+                    @isset($value)
+                      <h2>Temperatuur: {{$value}}</h2>
+                    @endisset
+                  @endif
+                @endforeach
+                <h2>Symptomen:</h2>
                 @foreach($symptoms as $key => $value)
                   @if ($value == 1)
                     <li id="{{$key}}_label" class="css-label"></li>
                   @endif
                 @endforeach
+                @foreach($symptoms as $key => $value)
+                  @if ($key == "notes")
+                    @isset($value)
+                      <div>
+                        <h2>Notities:</h2>
+                        <p id="notes">{{$value}}</p>
+                      </div>
+                    @endisset
+                  @endif
+                @endforeach
               </ul>
             </div>
 
-            <div class="container">
-              <ul>
-                <li><a href="{{ url('/pdf') }}">PDF</a></li>
-                <li><a href="{{ route('logout') }}"
-                  onclick="event.preventDefault();
-                  document.getElementById('logout-form').submit();">
-                  Logout
-                </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                  {{ csrf_field() }}
-                </form></li>
-              </ul>
-            </div>
+          </div>
+          <div class="options container">
+            <ul>
+              <a href="/pdf/{{$userid}}"><li class="well well-sm">PDF</li></a>
+              <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();"><li class="well well-sm">
+                Logout
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form></li>
+            </a>
+            </ul>
           </div>
         </div>
       </div>

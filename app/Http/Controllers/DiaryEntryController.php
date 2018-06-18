@@ -44,7 +44,7 @@ class DiaryEntryController extends Controller
           $symptoms = $diaryentry->getAttributes();
         }
 
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms]);
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms, 'userid'=>$userid]);
     }
 
     /**
@@ -109,6 +109,7 @@ class DiaryEntryController extends Controller
         'thighpain' => $request->thighpain,
         'kneepain' => $request->kneepain,
         'shinpain' => $request->shinpain,
+        'notes' => $request->notes,
       ]);
       $entry->save();
       return redirect('/home')->with('success', 'De wijzigingen zijn opgeslagen.');

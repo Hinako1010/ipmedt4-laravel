@@ -11,7 +11,7 @@ class DiaryEntry extends Model
     protected $table = 'diary_entries';
 
     protected $fillable = [
-      'user_id', 'bodytemp', 'cut', 'tickbite', 'skinrash', 'headache', 'shoulderpain', 'elbowpain', 'hippain', 'thighpain', 'kneepain', 'shinpain',
+      'user_id', 'bodytemp', 'cut', 'tickbite', 'skinrash', 'headache', 'shoulderpain', 'elbowpain', 'hippain', 'thighpain', 'kneepain', 'shinpain', 'notes',
     ];
 
     // public $incrementing = false;

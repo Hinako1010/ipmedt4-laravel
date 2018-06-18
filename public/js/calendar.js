@@ -42,9 +42,6 @@ function displayCalendar(){
  var weekdays2 = weekdays
  var numOfDays = dayPerMonth[month];
 
-
-
-
  // this leave a white space for days of pervious month.
  while (weekdays>0){
     htmlContent += "<td class='monthPre'></td>";
@@ -70,8 +67,13 @@ function displayCalendar(){
         htmlContent +="<td class='dayNow' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"#ef6647\"; this.style.color=\"#000\";' "+
         "onMouseOut='this.style.background=\"#FB785B\"; this.style.color=\"#000\";'>"+counter+"</td>";
     }else if (counter < day){
+      if (counter == 1 || counter == 5 || counter == 6 || counter == 7 || counter==13 || counter==15)
+        htmlContent +="<td class='monthNow notToday filled' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"yellow\"'"+
+        " onMouseOut='this.style.background=\"#ffc6ba\"'>"+counter+"</td>";
+      else {
         htmlContent +="<td class='monthNow notToday' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"yellow\"'"+
         " onMouseOut='this.style.background=\"#eee\"'>"+counter+"</td>";
+      }
     } else {
         htmlContent +="<td class='monthNow notToday' >"+counter+"</td>";
     }

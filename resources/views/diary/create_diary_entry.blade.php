@@ -9,7 +9,7 @@
   {!!Form::model($diaryentry, ['action'=>'DiaryEntryController@store'])!!}
     <div class="form-group">
       <label id="bodytemp_label" for="bodytemp"><h2>Lichaamstemperatuur</h2></label>
-      <input id="bodytemp" type="number" min="25" max="45" step="0.1" value="37.0">
+      <input id="bodytemp" type="number" min="25" max="45" step="0.1" name="bodytemp" value="37.0">
     </div>
     <div class="row">
       <div class="col-xs-12"><h2>Huidaandoeningen</h2></div>
@@ -43,7 +43,7 @@
     </div>
     <div class="row">
       <div class="col-xs-12"><h2>Onderlichaam</h2></div>
-      <div class="form-grou col-xs-4">
+      <div class="form-group col-xs-4">
         <input id="hippain" type="checkbox" class="css-checkbox" name="hippain" value="1">
         <label id="hippain_label" for="hippain" class="css-label"></label>
       </div>
@@ -60,9 +60,10 @@
         <label id="shinpain_label" for="shinpain" class="css-label"></label>
       </div>
     </div>
-    <div class="form-group col-xs-4">
-      <input id="notes" type="textfield" placeholder="Notes...">
-      <label id="notes_label" for="notes">Notities</label>
+    <div class="form-group">
+      <h2>Notities</h2>
+      <label id="notes_label" for="notes"></label>
+      <input id="notes" type="textarea" placeholder="Things to note..." name="notes" value="">
     </div>
 
     {{Form::submit('Opslaan', ['class'=>'btn btn-success'])}}
