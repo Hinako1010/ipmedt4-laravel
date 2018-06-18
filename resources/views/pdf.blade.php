@@ -33,19 +33,43 @@
     </td>
   </tr>
     <tr>
-        <td><br><br><u>Symptomen</u><br><br>
-        - Onverklaarbare koude rillingen<br>
-        - Pijnlijke keel<br>
-        - Maagklachten<br>
-        - Hartkloppingen<br>
-        - Pijn in de borstkas<br>
-        - Hoofdpijn<br>
-        - Pijn of jeuk in oren<br>
-        - Pijn in de onderbuik<br><br><br></td>
-
-
-
+        <th><br><br><u>Symptomen</u></th>
+        <th><br><br><u>Hoeveelheid dagen</u></th>
     </tr>
+    <tr>
+        <td>Onverklaarbare koude rillingen</td>
+        <td>3 dagen</td>
+    </tr>
+    <tr>
+        <td>Pijnlijke keel</td>
+        <td>1 dag</td>
+    </tr>
+    <tr>
+        <td>Maagklachten</td>
+        <td>3 dagen</td>
+    </tr>
+    <tr>
+        <td>Hartkloppingen</td>
+        <td>1 dag</td>
+    </tr>
+    <tr>
+        <td>Pijn in de borstkas</td>
+        <td>1 dag</td>
+    </tr>
+    <tr>
+        <td>Hoofdpijn</td>
+        <td>5 dagen</td>
+    </tr>
+    <tr>
+        <td>Pijn of jeuk in oren</td>
+        <td>1 dag</td>
+    </tr>
+    <tr>
+        <td>Pijn in de onderbuik<br><br><br></td>
+        <td>3 dagen<br><br><br></td>
+    </tr>
+
+
   <tr id="grafieken">
       <td>
           <img src="https://i.imgur.com/GEZWWFo.png" height="200" width="350">
