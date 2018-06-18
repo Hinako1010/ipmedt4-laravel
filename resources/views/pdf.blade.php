@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background-color: lightblue;
+            background-color: none;
         }
         #grafieken{
             margin-bottom: 8px;
@@ -27,7 +27,17 @@
     </td>
   </tr>
     <tr>
-        <td>Symptomen</td>
+        <td><br><br><u>Symptomen</u><br><br>
+        - Onverklaarbare koude rillingen<br>
+        - Pijnlijke keel<br>
+        - Maagklachten<br>
+        - Hartkloppingen<br>
+        - Pijn in de borstkas<br>
+        - Hoofdpijn<br>
+        - Pijn of jeuk in oren<br>
+        - Pijn in de onderbuik<br><br><br></td>
+
+
 
     </tr>
   <tr id="grafieken">
