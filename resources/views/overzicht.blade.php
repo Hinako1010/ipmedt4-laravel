@@ -44,7 +44,10 @@
                 <h2>Symptomen:</h2>
                 @foreach($symptoms as $key => $value)
                   @if ($value == 1)
-                    <li id="{{$key}}_label" class="css-label"></li>
+                      {{-- <div class="tooltip"> --}}
+                      <li title="{{$key}}" id="{{$key}}_label" class="css-label"></li>
+
+                    {{-- </div> --}}
                   @endif
                 @endforeach
                 @foreach($symptoms as $key => $value)
@@ -59,11 +62,10 @@
                 @endforeach
               </ul>
             </div>
-
           </div>
           <div class="options container">
             <ul>
-              <a href="/pdf/{{$userid}}"><li class="well well-sm">PDF</li></a>
+              <a href="/pdf/{{$userid}}" target="_blank"><li class="well well-sm">PDF overzicht</li></a>
               <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();"><li class="well well-sm">

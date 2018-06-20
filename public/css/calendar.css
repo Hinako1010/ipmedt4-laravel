@@ -50,7 +50,7 @@ a {
   left: 30%;
   top: 0;
   position: absolute;
-  padding: 3%;
+  padding: 0%  4% 2% 4%;
   border-collapse: separate;
   border-spacing: 5px;
 }
@@ -63,14 +63,15 @@ a {
 }
 
 .year {
-  font-size: 3em;
-  top: 3%;
-  font-weight: bold;
+  font-size: 2.5em;
   color: #000000;
-  text-align: right;
-  padding-bottom: 3%;
+  text-align: center;
   height: 1em;
   border-bottom: 1px solid #FB785B;
+}
+
+.monthnav {
+  color: #FB785B  ;
 }
 
 .dayNow{
@@ -79,13 +80,12 @@ a {
 
 .row td{
   margin-right: 35px;
-
 }
 
 .week td{
   text-align: center;
-  height: 7vh;
-  width: 7vh;
+  height: 5vw;
+  width: 5vw;
   border-radius: 50%;
 }
 
@@ -177,7 +177,6 @@ hr {
 #notes {
   word-wrap: break-word;
 }
-
 
 .options {
   position: absolute;

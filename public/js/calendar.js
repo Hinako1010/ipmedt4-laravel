@@ -84,8 +84,8 @@ function displayCalendar(){
 
 
  // building the calendar html body.
- var calendarBody = "<table class='calendar'> <tr class='monthNow'><th colspan='7' class='year'>"
- +monthNames[month]+" "+ year +"</th></tr>";
+ var calendarBody = "<table class='calendar'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
+ +monthNames[month]+" "+ year +" <span class='monthnav'>&gt;</span></th></tr>";
  calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tues</td>"+
  "<td>Wed</td> <td>Thurs</td> <td>Fri</td> <td>Sat</td> </tr>";
  calendarBody += "<tr class='week'>";

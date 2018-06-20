@@ -10,8 +10,8 @@ input[type=checkbox].css-checkbox{ display: none; }
 .css-label{
   padding-left: 20px;
   display: flex;
-  width: 20vw;
-  height: 20vw;
+  width: 17vw;
+  height: 17vw;
   /* background-image: url(http://vf.viresultra.com/wp-content/uploads/2017/04/Screen-Shot-2017-03-31-at-8.58.42-PM.png); */
   background-repeat: no-repeat;
   background-color: #E9EEF4;
@@ -21,6 +21,8 @@ input[type=checkbox].css-checkbox{ display: none; }
 input[type=checkbox].css-checkbox:checked + label.css-label {
   background-position: 0 0;
   border: 3px solid #2FBCDF;
+}
+label {
 }
  /* images voor de checkboxen */
 #cut_label {
