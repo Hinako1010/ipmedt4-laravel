@@ -32,6 +32,12 @@
       {{$user->email}}
     </td>
   </tr>
+  <tr>
+    <td style="color:red;">
+    <br>
+         Het wordt aangeraden om naar de huisarts te gaan!
+    </td>
+  </tr>
     <tr>
         <th><br><br><u>Symptomen</u></th>
         <th><br><br><u>Hoeveelheid dagen</u></th>
