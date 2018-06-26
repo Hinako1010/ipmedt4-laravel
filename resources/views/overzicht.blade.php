@@ -63,10 +63,10 @@
             </div>
             <div class="options container">
               <ul>
-                <a href="/pdf/{{$userid}}" target="_blank"><li class="well well-sm">PDF overzicht</li></a>
+                <a href="/pdf/{{$userid}}" target="_blank" class="btn btn-default"><li>PDF overzicht</li></a>
                 <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();"><li class="well well-sm">
+                document.getElementById('logout-form').submit();" class="btn btn-default"><li>
                   Logout
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}

@@ -6,8 +6,7 @@
 @section('content')
   <div class="panel panel-default">
     <div class="panel-heading">
-      <a href="/home"><span class="btn btn-default">&larr; Terug naar kalender</span></a>
-      <h1>Vandaag: {{$daynr}} {{$monthstr}}</h1>
+      <h1><a href="/home" class="larr pull-left"><span>&larr; </span></a> Vandaag: {{$daynr}} {{$monthstr}}</h1>
     </div>
 
     <div class="panel-body">
@@ -109,6 +108,7 @@
           <label id="notes_label" for="notes"></label>
           <textarea id="notes" cols="10" rows="5" placeholder="Notities" name="notes"></textarea>
         </div>
+        <div class="btn btn-default pull-left"><a href="/home">Annuleren</a></div>
 
         {{Form::submit('Opslaan', ['class'=>'btn btn-success pull-right'])}}
       {!!Form::close() !!}

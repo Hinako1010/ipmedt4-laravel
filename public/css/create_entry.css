@@ -1,3 +1,8 @@
+
+h1 {
+  text-align: center;
+}
+
 h5{
   font-size: 1.2em;
   text-align: center;
@@ -5,6 +10,16 @@ h5{
 
 label.css-label:hover{
   cursor: pointer;
+}
+.larr{
+  color: black;
+  text-decoration: none;
+  text-decoration: none;
+  float: left!important;
+  
+} .larr:hover {
+  color: #9febf4;
+  text-decoration: none;
 }
 
 /* Checkbox met image */
@@ -22,7 +37,7 @@ input[type=checkbox].css-checkbox{ display: none; }
 }
 input[type=checkbox].css-checkbox:checked + label.css-label {
   background-position: 0 0;
-  border: 3px solid #2FBCDF;
+  border: 2px solid #FB785B;
 }
  /* images voor de checkboxen */
 #cut_label {
@@ -62,10 +77,18 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 @media only screen and (max-width: 720px) {
+  h1{
+    font-size: 2em;
+  }
   h2 {
     font-size: 1em;
   }
   h5 {
+    letter-spacing: 1px;
     font-size: 0.7em;
+  }
+  .css-label{
+    width: 15vw;
+    height: 15vw;
   }
 }
