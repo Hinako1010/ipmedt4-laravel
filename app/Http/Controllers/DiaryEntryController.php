@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\DiaryEntry;
+use App\User;
 use Auth;
 
 class DiaryEntryController extends Controller
@@ -38,13 +39,14 @@ class DiaryEntryController extends Controller
 
         $userid = Auth::id();
         $diaryentry = DiaryEntry::where('user_id', $userid)->get()->last();
-
+        $naam = User::find($userid);
+        $naam = $naam->voornaam;
         $symptoms = array();
         if($diaryentry != null){
           $symptoms = $diaryentry->getAttributes();
         }
 
-        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms, 'userid'=>$userid]);
+        return view('overzicht')->with(['daynr'=>$day, 'monthstr'=>$month, 'symptoms'=>$symptoms, 'userid'=>$userid, 'naam'=>$naam]);
     }
 
     /**

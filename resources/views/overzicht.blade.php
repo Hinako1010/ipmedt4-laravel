@@ -19,12 +19,11 @@
 
     </head>
     <body>
-
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
           <div class="calendar-left col-xs-12 col-sm-12 col-md-4">
-            @include('inc.messages')
             <div class="container">
+              @include('inc.messages')
               <div class="date">
                 <h1 id="daynr">{{$daynr}}</h1>
                 <h2 id="monthstr">{{$monthstr}}</h2>
