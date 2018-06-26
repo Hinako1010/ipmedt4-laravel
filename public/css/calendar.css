@@ -92,6 +92,9 @@ a {
   width: 5vw;
   border-radius: 50%;
 }
+.monthNow {
+  cursor: pointer;
+}
 
 .dayNames{
  text-align: center;
@@ -107,7 +110,7 @@ a {
   background-color: #eee;
 }
 .filled {
-  background-color: #ffc6ba;
+  background-color: #ccc;
 }
 
 
@@ -249,6 +252,6 @@ hr {
   }
   .options {
     position: relative;
-    top: 50px;
+    top: 40px;
   }
 }

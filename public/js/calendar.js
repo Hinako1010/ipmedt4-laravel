@@ -1,14 +1,24 @@
 
 window.onload = function(){
-  displayCalendar();
   width = window.innerWidth;
   fixWindowWidth(width);
+  displayCalendar();
 
   window.addEventListener('resize', ()=> {
     width = window.innerWidth;
     fixWindowWidth(width);
   });
+
+
+  var fillDays = document.querySelectorAll('.fillDay');
+  Array.from(fillDays).forEach(link => {
+      link.addEventListener('click', function redirectToNewDiaryEntry() {
+        location.href = "/newentry";
+      });
+  });
 }
+
+
 
 function fixWindowWidth(width){
   if (innerWidth < 720){
@@ -17,26 +27,19 @@ function fixWindowWidth(width){
   } else {
     console.log("bigger than 710px?");
     document.getElementById("layoutrow").classList.remove('no-gutters')
-
   }
 }
 
 function displayCalendar(){
-
-
  var htmlContent ="";
  var FebNumberOfDays ="";
  var counter = 1;
-
-
  var dateNow = new Date();
  var month = dateNow.getMonth();
-
  var nextMonth = month+1; //+1; //Used to match up the current month with the correct start date.
  var prevMonth = month -1;
  var day = dateNow.getDate();
  var year = dateNow.getFullYear();
-
 
  //Determing if February (28,or 29)
  if (month == 1){
@@ -47,12 +50,10 @@ function displayCalendar(){
     }
  }
 
-
  // names of months and week days.
  var monthNames = ["January","February","March","April","May","June","July","August","September","October","November", "December"];
  var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday", "Saturday"];
  var dayPerMonth = ["31", ""+FebNumberOfDays+"","31","30","31","30","31","31","30","31","30","31"]
-
 
  // days in previous month and next one , and day of week.
  var nextDate = new Date(nextMonth +' 1 ,'+year);
@@ -77,29 +78,25 @@ function displayCalendar(){
         htmlContent += "</tr><tr class='week'>";
     }
 
-
-
     // if counter is current day.
     // highlight current day using the CSS defined in header.
     if (counter == day){
-        htmlContent +="<td class='dayNow' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"#ef6647\"; this.style.color=\"#000\";' "+
+        htmlContent +="<td class='fillDay dayNow' onMouseOver='this.style.background=\"#9febf4\"; this.style.color=\"#000\";' "+
         "onMouseOut='this.style.background=\"#FB785B\"; this.style.color=\"#000\";'>"+counter+"</td>";
     }else if (counter < day){
       if (counter == 1 || counter == 5 || counter == 6 || counter == 7 || counter==13 || counter==15)
-        htmlContent +="<td class='monthNow notToday filled' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"yellow\"'"+
-        " onMouseOut='this.style.background=\"#ffc6ba\"'>"+counter+"</td>";
+        htmlContent +="<td class='fillDay monthNow notToday filled' onMouseOver='this.style.background=\"#9febf4\"'"+
+        " onMouseOut='this.style.background=\"#ccc\"'>"+counter+"</td>";
       else {
-        htmlContent +="<td class='monthNow notToday' onclick='redirectToNewDiaryEntry()' onMouseOver='this.style.background=\"yellow\"'"+
+        htmlContent +="<td class='fillDay monthNow notToday' onMouseOver='this.style.background=\"#9febf4\"'"+
         " onMouseOut='this.style.background=\"#eee\"'>"+counter+"</td>";
       }
     } else {
         htmlContent +="<td class='monthNow notToday' >"+counter+"</td>";
     }
-
     weekdays2++;
     counter++;
  }
-
 
  // building the calendar html body.
  var calendarBody = "<table class='calendar col-xs-12  col-sm-12 col-md-8'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
@@ -113,9 +110,4 @@ function displayCalendar(){
 
  var layoutrow = document.getElementById("layoutrow");
  layoutrow.innerHTML += calendarBody;
-
-}
-
-function redirectToNewDiaryEntry(){
-  location.href = "/newentry";
 }
