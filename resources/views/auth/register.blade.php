@@ -63,12 +63,12 @@
                                 <input id="vrouw" type="radio" name="geslacht" value="vrouw">Vrouw
                             </label>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="profilepic" class="col-md-4 control-label">Profielfoto:</label>
                             <div class="col-md-6">
                                 <input type="file" id="profilepic" name="profilepic" class="form-control">
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Wachtwoord*</label>
