@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="infotekst">
-                    <p>
+                    <p style="font-weight: bold;">
                         Welkom bij Medisch Dagboek!<br>
                         Hierin kun je al je medische gegevens bijhouden, <br>
                         om zo je huisarts te kunnen helpen van opimaler <br>
