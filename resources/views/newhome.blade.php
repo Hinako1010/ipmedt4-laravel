@@ -132,9 +132,10 @@
                 <div class="infotekst">
                     <p style="font-weight: bold;">
                         Welkom bij Medisch Dagboek!<br>
-                        Hierin kun je al je medische gegevens bijhouden, <br>
-                        om zo je huisarts te kunnen helpen van opimaler <br>
-                        consult door je gegevens te versturen. <br>
+                        Hier kun je al je medische gegevens bijhouden. <br>
+                        Dit doe je om de huisarts te helpen. <br>
+                        Hierdoor is je consult gelijk een stuk completer <br>
+                        en kun je al de gegeven meenemen naar de arts. <br>
                     </p>
                 </div>                  
 
