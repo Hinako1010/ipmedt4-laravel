@@ -1,6 +1,24 @@
 
 window.onload = function(){
   displayCalendar();
+  width = window.innerWidth;
+  fixWindowWidth(width);
+
+  window.addEventListener('resize', ()=> {
+    width = window.innerWidth;
+    fixWindowWidth(width);
+  });
+}
+
+function fixWindowWidth(width){
+  if (innerWidth < 720){
+    console.log("smaller than 720px");
+    document.getElementById("layoutrow").classList.add('no-gutters')
+  } else {
+    console.log("bigger than 710px?");
+    document.getElementById("layoutrow").classList.remove('no-gutters')
+
+  }
 }
 
 function displayCalendar(){
@@ -84,16 +102,17 @@ function displayCalendar(){
 
 
  // building the calendar html body.
- var calendarBody = "<table class='calendar'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
+ var calendarBody = "<table class='calendar col-xs-12  col-sm-12 col-md-8'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
  +monthNames[month]+" "+ year +" <span class='monthnav'>&gt;</span></th></tr>";
- calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tues</td>"+
- "<td>Wed</td> <td>Thurs</td> <td>Fri</td> <td>Sat</td> </tr>";
+ calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td>"+
+ "<td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
  calendarBody += "<tr class='week'>";
  calendarBody += htmlContent;
  calendarBody += "</tr></table>";
  // set the content of div .
 
- document.getElementById("calendar").innerHTML+=calendarBody;
+ var layoutrow = document.getElementById("layoutrow");
+ layoutrow.innerHTML += calendarBody;
 
 }
 
