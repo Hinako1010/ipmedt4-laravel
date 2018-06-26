@@ -107,7 +107,7 @@
         <div class="form-group">
           <h2>Notities</h2>
           <label id="notes_label" for="notes"></label>
-          <input id="notes" type="textarea" placeholder="Things to note..." name="notes" value="">
+          <textarea id="notes" cols="10" rows="5" placeholder="Notities" name="notes"></textarea>
         </div>
 
         {{Form::submit('Opslaan', ['class'=>'btn btn-success pull-right'])}}

@@ -1,5 +1,4 @@
 @if(Auth::check())
-
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
