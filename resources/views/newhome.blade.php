@@ -14,7 +14,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #9febf4;
+                /* background-color: #9febf4; */
+                background-color: #fdfdfd;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -224,6 +225,7 @@
                     <!-- <img class="homeafb12" src="{{ URL::to('/icons/logo.png') }}"> -->
                     <br>
                     <br>
+                    
                     <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
                     <img class="homeafb" src="{{ URL::to('/icons/dokter.png') }}">
 
@@ -234,10 +236,9 @@
                 <div class="infotekst">
                     <p style="font-weight: bold;">
                         Welkom bij Medisch Dagboek!<br>
-                        Hier kun je al je medische gegevens bijhouden. <br>
-                        Dit doe je om de huisarts te helpen. <br>
-                        Hierdoor is je consult gelijk een stuk completer <br>
-                        en kun je al de gegeven meenemen naar de arts. <br>
+                        Hier kun je al je medische gegevens <br>
+                        gemakkelijk bijhouden. <br>
+                     
                     </p>
                 </div>   
 
@@ -257,7 +258,7 @@
                <div class="infotekst">
                <img class="homeafb3" src="{{ URL::to('/icons/iconkal.png') }} " >               
                     <p style="font-weight: bold;">
-                    Waarbij je gemakkelijk per dag je symtomen kunt invullen.<br>
+                    Waarbij je gemakkelijk per dag je symtomen kunt invullen.
                     </p>
                 </div>   
                 
@@ -290,6 +291,8 @@
                     </form>
                 </div>
                 <img class="homeafb12" src="{{ URL::to('/icons/logo.png') }}">
+                <br>
+                <br>
             </div>
         </div>
     </body>
