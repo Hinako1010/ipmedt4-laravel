@@ -87,6 +87,9 @@
             .homeafb1{
                 height: 125px;
             }
+            .homeafb12{
+                height: 35px;
+            }
             .homeafb{
                 height: 90px;
             }
@@ -116,7 +119,7 @@
             @endif
 
             <div class="content">
-                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
+                    <img class="homeafb12" src="{{ URL::to('/icons/logo.png') }}">
                     <br>
                     <br>
                     <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
@@ -127,11 +130,12 @@
                 </div>
 
                 <div class="infotekst">
-                    <p>
+                    <p style="font-weight: bold;">
                         Welkom bij Medisch Dagboek!<br>
-                        Hierin kun je al je medische gegevens bijhouden, <br>
-                        om zo je huisarts te kunnen helpen van opimaler <br>
-                        consult door je gegevens te versturen. <br>
+                        Hier kun je al je medische gegevens bijhouden. <br>
+                        Dit doe je om de huisarts te helpen. <br>
+                        Hierdoor is je consult gelijk een stuk completer <br>
+                        en kun je al de gegeven meenemen naar de arts. <br>
                     </p>
                 </div>                  
 

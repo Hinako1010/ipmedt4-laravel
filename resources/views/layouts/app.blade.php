@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Medisch Dagboek') }}
+                        <img src="{{ URL::to('/icons/logo.png') }}" height="28" width="120">
                     </a>
                 </div>
 
