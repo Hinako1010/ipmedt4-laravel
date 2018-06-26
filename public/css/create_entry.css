@@ -1,7 +1,71 @@
-h2 {
-  font-size: 1em;
+h5{
+  font-size: 1.2em;
+  text-align: center;
 }
 
-h5 {
-  font-size: 0.7em;
+label.css-label:hover{
+  cursor: pointer;
+}
+
+/* Checkbox met image */
+input[type=checkbox].css-checkbox{ display: none; }
+.css-label{
+  display: flex;
+  width: 17vw;
+  height: 17vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-color: #E9EEF4;
+  background-size: cover;
+  background-position: center;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 0;
+  border: 3px solid #2FBCDF;
+}
+ /* images voor de checkboxen */
+#cut_label {
+  background-image: url('/icons/wound.png');
+}
+#tickbite_label {
+  background-image: url('/icons/tickbite.png');
+}
+#skinrash_label {
+  background-image: url('/icons/skin_rash.png');
+}
+ #headache_label {
+   background-image: url('/icons/head.png');
+}
+ #shoulderpain_label {
+   background-image: url('/icons/shoulder.png');
+}
+#elbowpain_label {
+  background-image: url('/icons/elbow.png');
+}
+#hippain_label {
+  background-image: url('/icons/hip.png');
+}
+#thighpain_label {
+  background-image: url('/icons/thigh.png');
+}
+#kneepain_label {
+  background-image: url('/icons/knee.png');
+}
+#shinpain_label {
+  background-image: url('/icons/shin.png');
+}
+
+#notes {
+    width: 40vw;
+    height: 10vw;
+}
+
+@media only screen and (max-width: 720px) {
+  h2 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 0.7em;
+  }
 }
