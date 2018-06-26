@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title></title>
+  <title>Medisch Dagboek PDF</title>
 
     <style>
         body {
@@ -14,8 +14,9 @@
         #grafieken{
             margin-bottom: 8px;
         }
-        #tabelletje{
-            padding: 10px;
+        #tabelletje table, th, td{
+            /*padding: 10px;*/
+            /*border: 1px solid black;*/
         }
 
     </style>
@@ -37,14 +38,18 @@
     <br>
     De inhoud/content van Medisch dagboek is niet bedoeld als vervanging van professioneel medisch advies, diagnose en/of behandeling. Raadpleeg altijd uw huisarts of een andere bevoegde zorgverlener, als u onzeker bent over (de gevolgen van) een medische aandoening.
     </td>
-  </tr>
+  </table>
+<table id="tabelletje" class="table table-bordered">
+
     <tr>
         <th><br><br><u>Symptomen</u></th>
         <th><br><br><u>Hoeveelheid dagen</u></th>
+        <th><br><br><u>Data</u></th>
     </tr>
     <tr>
         <td>Onverklaarbare koude rillingen</td>
         <td>3 dagen</td>
+        <td></td>
     </tr>
     <tr>
         <td>Pijnlijke keel</td>
@@ -74,8 +79,8 @@
         <td>Pijn in de onderbuik<br><br><br></td>
         <td>3 dagen<br><br><br></td>
     </tr>
-
-
+</table>
+<table class="table table-bordered">
   <tr id="grafieken">
       <td>
           <img src="https://i.imgur.com/GEZWWFo.png" height="200" width="350">
