@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="{{ URL::to('/icons/logo.png') }}" height="28" width="150">
+                        <img src="{{ URL::to('/icons/logo.png') }}" height="28" width="120">
                     </a>
                 </div>
 

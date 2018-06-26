@@ -87,6 +87,9 @@
             .homeafb1{
                 height: 125px;
             }
+            .homeafb12{
+                height: 35px;
+            }
             .homeafb{
                 height: 90px;
             }
@@ -116,7 +119,7 @@
             @endif
 
             <div class="content">
-                    <img class="homeafb2" src="{{ URL::to('/icons/logo.png') }}">
+                    <img class="homeafb12" src="{{ URL::to('/icons/logo.png') }}">
                     <br>
                     <br>
                     <img class="homeafb1" src="{{ URL::to('/icons/dagboek.png') }}">
