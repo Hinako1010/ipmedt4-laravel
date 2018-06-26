@@ -35,7 +35,7 @@
   <tr>
     <td style="color:red;">
     <br>
-         Het wordt aangeraden om naar de huisarts te gaan!
+    De inhoud/content van Medisch dagboek is niet bedoeld als vervanging van professioneel medisch advies, diagnose en/of behandeling. Raadpleeg altijd uw huisarts of een andere bevoegde zorgverlener, als u onzeker bent over (de gevolgen van) een medische aandoening.
     </td>
   </tr>
     <tr>
