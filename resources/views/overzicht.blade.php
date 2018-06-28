@@ -19,8 +19,11 @@
     </head>
     <body>
 
-    <span class='helpicon'><p>?</p></span><span onclick='document.getElementById("id01").style.display="block"' class='helpicon2'><p>?</p></span>
-      <div id="id01" class="w3-modal">
+    <span onclick='document.getElementById("id01").style.display="block"' class='helpicon'><p>?</p></span>
+    <span onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();"  class='helpicon2'><p><img height="35px" src="{{ URL::to('/icons/iconlogout.png') }}"></p></span>
+      
+    <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
             <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
@@ -28,6 +31,7 @@
               <p>Some text. Some text. Some text.</p>
           </div>
       </div>
+
     </div>
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
@@ -74,14 +78,14 @@
               <div class="options container">
                 <ul>
                   <a href="/pdf/{{$userid}}" target="_blank" class="btn btn-default"><li>PDF overzicht</li></a>
-                  <a href="{{ route('logout') }}"
+                  <!-- <a href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();" class="btn btn-default"><li>
                     Logout
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       {{ csrf_field() }}
                     </form></li>
-                  </a>
+                  </a> -->
                 </ul>
               </div>
             </div>
