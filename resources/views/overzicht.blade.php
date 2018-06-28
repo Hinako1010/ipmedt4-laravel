@@ -20,7 +20,7 @@
     <body>
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
-          <div class="calendar-left col-xs-12 col-sm-12 col-md-4">
+          <div class="calendar-left col-xs-12 col-sm-12 col-md-3">
             <div class="container">
               @include('inc.messages')
               <div class="date">
@@ -60,19 +60,19 @@
                   @endforeach
                 </ul>
               </div>
-            </div>
-            <div class="options container">
-              <ul>
-                <a href="/pdf/{{$userid}}" target="_blank" class="btn btn-default"><li>PDF overzicht</li></a>
-                <a href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();" class="btn btn-default"><li>
-                  Logout
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                  </form></li>
-                </a>
-              </ul>
+              <div class="options container">
+                <ul>
+                  <a href="/pdf/{{$userid}}" target="_blank" class="btn btn-default"><li>PDF overzicht</li></a>
+                  <a href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();" class="btn btn-default"><li>
+                    Logout
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      {{ csrf_field() }}
+                    </form></li>
+                  </a>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

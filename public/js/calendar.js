@@ -22,10 +22,8 @@ window.onload = function(){
 
 function fixWindowWidth(width){
   if (innerWidth < 720){
-    console.log("smaller than 720px");
     document.getElementById("layoutrow").classList.add('no-gutters')
   } else {
-    console.log("bigger than 710px?");
     document.getElementById("layoutrow").classList.remove('no-gutters')
   }
 }
@@ -99,7 +97,7 @@ function displayCalendar(){
  }
 
  // building the calendar html body.
- var calendarBody = "<table class='calendar col-xs-12  col-sm-12 col-md-8'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
+ var calendarBody = "<span class='helpicon'><p>?</p></span><table class='calendar col-xs-12  col-sm-12 col-md-9'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
  +monthNames[month]+" "+ year +" <span class='monthnav'>&gt;</span></th></tr>";
  calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td>"+
  "<td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
@@ -110,4 +108,5 @@ function displayCalendar(){
 
  var layoutrow = document.getElementById("layoutrow");
  layoutrow.innerHTML += calendarBody;
+
 }
