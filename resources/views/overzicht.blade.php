@@ -19,13 +19,15 @@
 
     </head>
     <body>
-    <span class='helpicon'><p>?</p></span><span onclick='document.getElementById("id01").style.display="block"' class='helpicon2'><p>?</p></span>
+    <span onclick='document.getElementById("id01").style.display="block"' class='helpicon'><p>?</p></span>
+    <span onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();"  class='helpicon2'><p><img height="35px" src="{{ URL::to('/icons/iconlogout.png') }}"></p></span>
     <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
     
-                <img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213">
+                <img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213" style="margin-left:38%;">
                     <p style="font-weight: bold; text-align:center;">
                         Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
                     </p>
@@ -33,7 +35,7 @@
                 
 
                
-               <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="150">               
+               <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="213" style="margin-left:38%;">               
                     <p style="font-weight: bold; text-align:center;">
                     Waarbij je gemakkelijk per dag je symtomen kunt invullen.
                     </p>
