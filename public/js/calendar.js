@@ -4,6 +4,8 @@ window.onload = function(){
   fixWindowWidth(width);
   displayCalendar();
 
+
+
   window.addEventListener('resize', ()=> {
     width = window.innerWidth;
     fixWindowWidth(width);
@@ -96,6 +98,9 @@ function displayCalendar(){
     counter++;
  }
 
+ //variabelen om quote problemen te mijden
+ var id = 'id01';
+ var style = 'block';
  // building the calendar html body.
  var calendarBody = "<span class='helpicon'><p>?</p></span><span class='helpicon2'><p>-</p></span><table class='calendar col-xs-12  col-sm-12 col-md-9'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
 

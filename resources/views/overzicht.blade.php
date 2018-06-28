@@ -18,6 +18,17 @@
 
     </head>
     <body>
+
+    <span class='helpicon'><p>?</p></span><span onclick='document.getElementById("id01").style.display="block"' class='helpicon2'><p>?</p></span>
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <p>Some text. Some text. Some text.</p>
+              <p>Some text. Some text. Some text.</p>
+          </div>
+      </div>
+    </div>
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
           <div class="calendar-left col-xs-12 col-sm-12 col-md-3">
