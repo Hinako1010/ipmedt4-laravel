@@ -24,8 +24,38 @@
     <div class="w3-modal-content">
       <div class="w3-container">
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <p>Some text. Some text. Some text.</p>
-        <p>Some text. Some text. Some text.</p>
+    
+                <img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213">
+                    <p style="font-weight: bold; text-align:center;">
+                        Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
+                    </p>
+                  
+                
+
+               
+               <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="150">               
+                    <p style="font-weight: bold; text-align:center;">
+                    Waarbij je gemakkelijk per dag je symtomen kunt invullen.
+                    </p>
+                  
+                
+
+              
+                <img class="homeafb4" src="{{ URL::to('/icons/icongaf.png') }} " >               
+                    <p style="font-weight: bold;">
+                        Genereer samenvatting in de vorm van PDF van je klachten. <br>
+                        Die je naar je huistart kunt sturen/ meenemen. <br>
+                    </p>
+                
+                  
+
+          
+                <img class="homeafb4" src="{{ URL::to('/icons/icondocter.png') }} " >
+                    <p style="font-weight: bold;">
+                        Hierdoor kan je huisart snel je klachten van een afgelopen periode inzien <br>
+                        en je geen beter en gerichter consult geven.<br>
+                    </p>
+              
       </div>
     </div>
   </div>
