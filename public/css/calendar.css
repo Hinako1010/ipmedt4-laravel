@@ -14,7 +14,7 @@ body {
 /* style voor popup box */
 .helpicon {
   margin-left:85%; 
-  z-index:9999; 
+  z-index:3; 
   cursor: pointer;
   font-size:3em; 
   margin-top:20px;
@@ -35,7 +35,7 @@ body {
 .helpicon2 {
   background-image: url("/icons/logouticon.png");;
   margin-left:92%; 
-  z-index:9999; 
+  z-index:3; 
   cursor: pointer;
   font-size:3em; 
   margin-top:20px;
@@ -50,7 +50,7 @@ body {
   background-color: #9febf4;
 }
 .helpicon2 p {
-  margin-top:-10px;
+  margin-top:-15px;
   font-weight: 100;
 }
 

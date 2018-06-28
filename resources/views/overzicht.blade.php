@@ -11,6 +11,7 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="css/calendar.css" rel="stylesheet" type="text/css">
 
         {{-- Scripts --}}
@@ -18,17 +19,48 @@
 
     </head>
     <body>
+    <span onclick='document.getElementById("id01").style.display="block"' class='helpicon'><p>?</p></span>
+    <span onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();"  class='helpicon2'><p><img height="35px" src="{{ URL::to('/icons/iconlogout.png') }}"></p></span>
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+    
+                <div style="text-align:center;"><img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213"></div>
+                    <p style="font-weight: bold; text-align:center;">
+                        Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
+                    </p>
+                  
+                
 
-    <span class='helpicon'><p>?</p></span><span onclick='document.getElementById("id01").style.display="block"' class='helpicon2'><p>?</p></span>
-      <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container">
-            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-              <p>Some text. Some text. Some text.</p>
-              <p>Some text. Some text. Some text.</p>
-          </div>
+               
+               <div style="text-align:center;"><img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="150"></div>               
+                    <p style="font-weight: bold; text-align:center;">
+                    Waarbij je gemakkelijk per dag je symtomen kunt invullen.
+                    </p>
+                  
+                
+
+              
+              <div style="text-align:center;"><img src="{{ URL::to('/icons/icongaf.png') }} " width="118" height="120">  </div>                
+                    <p style="font-weight: bold; text-align:center;">
+                        Genereer samenvatting in de vorm van PDF van je klachten. <br>
+                        Die je naar je huistart kunt sturen/ meenemen. <br>
+                    </p>
+                
+                  
+
+          
+          <div style="text-align:center;"> <img src="{{ URL::to('/icons/icondocter.png') }} " width="118" height="120"></div>   
+                    <p style="font-weight: bold; text-align:center;">
+                        Hierdoor kan je huisart snel je klachten van een afgelopen periode inzien <br>
+                        en je geen beter en gerichter consult geven.<br>
+                    </p>
+              
       </div>
     </div>
+  </div>
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
           <div class="calendar-left col-xs-12 col-sm-12 col-md-3">

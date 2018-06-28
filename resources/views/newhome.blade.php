@@ -242,7 +242,7 @@
                     </p>
                 </div>   
 
-               <p class="mouse" onClick="uitvouwen('sc1')" style="cursor:hand; font-weight: bold; text-decoration: underline;">Klik hier voor meer info</p>
+               <p class="mouse" onClick="uitvouwen('sc1')" style="cursor:pointer; font-weight: bold; text-decoration: underline;">Klik hier voor meer info</p>
                 <div id="sc1" class="wisselen">
                 
                
