@@ -27,7 +27,7 @@
       <div class="w3-container">
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
     
-                <img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213" style="margin-left:38%;">
+                <div style="text-align:center;"><img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213"></div>
                     <p style="font-weight: bold; text-align:center;">
                         Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
                     </p>
@@ -35,7 +35,7 @@
                 
 
                
-               <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="213" style="margin-left:38%;">               
+               <div style="text-align:center;"><img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="150"></div>               
                     <p style="font-weight: bold; text-align:center;">
                     Waarbij je gemakkelijk per dag je symtomen kunt invullen.
                     </p>
@@ -43,8 +43,8 @@
                 
 
               
-                <img class="homeafb4" src="{{ URL::to('/icons/icongaf.png') }} " >               
-                    <p style="font-weight: bold;">
+              <div style="text-align:center;"><img src="{{ URL::to('/icons/icongaf.png') }} " width="118" height="120">  </div>                
+                    <p style="font-weight: bold; text-align:center;">
                         Genereer samenvatting in de vorm van PDF van je klachten. <br>
                         Die je naar je huistart kunt sturen/ meenemen. <br>
                     </p>
@@ -52,8 +52,8 @@
                   
 
           
-                <img class="homeafb4" src="{{ URL::to('/icons/icondocter.png') }} " >
-                    <p style="font-weight: bold;">
+          <div style="text-align:center;"> <img src="{{ URL::to('/icons/icondocter.png') }} " width="118" height="120"></div>   
+                    <p style="font-weight: bold; text-align:center;">
                         Hierdoor kan je huisart snel je klachten van een afgelopen periode inzien <br>
                         en je geen beter en gerichter consult geven.<br>
                     </p>
