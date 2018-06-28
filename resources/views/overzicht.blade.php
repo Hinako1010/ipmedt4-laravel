@@ -11,6 +11,7 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="css/calendar.css" rel="stylesheet" type="text/css">
 
         {{-- Scripts --}}
@@ -18,6 +19,16 @@
 
     </head>
     <body>
+    <span class='helpicon'><p>?</p></span><span onclick='document.getElementById("id01").style.display="block"' class='helpicon2'><p>?</p></span>
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+  </div>
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
           <div class="calendar-left col-xs-12 col-sm-12 col-md-3">
