@@ -244,8 +244,17 @@ hr {
     background-color: #FB785B ;
   }
   .helpicon{
+    margin-left:64%;
+  } 
+  .helpicon2{
     margin-left:82%;
   } 
+  hr{
+    width: 100%!important;
+  }
+  #daynr{
+    padding-top: 75px!important;
+  }
   .calendar {
     left: 0;
     top: 0;

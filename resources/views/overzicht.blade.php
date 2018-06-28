@@ -25,39 +25,25 @@
     <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-    
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>  
                 <img src="{{ URL::to('/icons/iconkal3.png') }} " height="150" width="213" style="margin-left:38%;">
                     <p style="font-weight: bold; text-align:center;">
                         Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
                     </p>
-                  
-                
-
-               
                <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="213" style="margin-left:38%;">               
                     <p style="font-weight: bold; text-align:center;">
                     Waarbij je gemakkelijk per dag je symtomen kunt invullen.
                     </p>
-                  
-                
-
-              
                 <img class="homeafb4" src="{{ URL::to('/icons/icongaf.png') }} " >               
                     <p style="font-weight: bold;">
                         Genereer samenvatting in de vorm van PDF van je klachten. <br>
                         Die je naar je huistart kunt sturen/ meenemen. <br>
                     </p>
-                
-                  
-
-          
                 <img class="homeafb4" src="{{ URL::to('/icons/icondocter.png') }} " >
                     <p style="font-weight: bold;">
                         Hierdoor kan je huisart snel je klachten van een afgelopen periode inzien <br>
                         en je geen beter en gerichter consult geven.<br>
-                    </p>
-              
+                    </p> 
       </div>
     </div>
   </div>
@@ -106,13 +92,14 @@
               <div class="options container">
                 <ul>
                   <a href="/pdf/{{$userid}}" target="_blank" class="btn btn-default"><li>PDF overzicht</li></a>
-                  <a href="{{ route('logout') }}"
+                  <!-- <a href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();" class="btn btn-default"><li>
-                    Logout
+                    Logout -->
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       {{ csrf_field() }}
-                    </form></li>
+                    </form>
+                  <!-- </li> -->
                   </a>
                 </ul>
               </div>
