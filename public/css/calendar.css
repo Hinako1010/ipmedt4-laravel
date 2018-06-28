@@ -13,7 +13,7 @@ body {
 }
 /* style voor popup box */
 .helpicon {
-  margin-left:90%; 
+  margin-left:92%; 
   z-index:9999; 
   cursor: pointer;
   font-size:3em; 
@@ -219,11 +219,11 @@ hr {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 720px) {
-  #helpicon:hover{
+  .helpicon:hover{
     background-color: #FB785B ;
   }
-  #helpicon{
-    margin-left:85%;
+  .helpicon{
+    margin-left:82%;
   } 
   .calendar {
     left: 0;
