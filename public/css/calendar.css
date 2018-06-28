@@ -43,12 +43,13 @@ a {
   color: black;
 } a:hover {
   text-decoration: none;
-  color: #FB785B;
+  color: #FB785B; /* blue */
 }
 
 .row {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 .container {
@@ -73,9 +74,6 @@ a {
 }
 .calendar {
   height: 100%;
-  left: 30%;
-  top: 0;
-  position: absolute;
   padding: 0%  4% 2% 4%;
   border-collapse: separate;
   border-spacing: 5px;
@@ -113,7 +111,7 @@ a {
   text-align: center;
   height: 5vw;
   width: 5vw;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .monthNow {
   cursor: pointer;
@@ -215,7 +213,7 @@ hr {
   top: 50px;
 }
 .options > ul > .btn {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -325,7 +323,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     color: #636b6f;
     background-color: #fff;
     border-color: #ccc;
-    wi
+
 }
 .btn-default.focus, .btn-default:focus {
     color: #636b6f;
