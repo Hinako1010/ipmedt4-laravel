@@ -14,8 +14,7 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Medisch Dagboek') }}
+            <a class="navbar-brand" href="{{ url('/') }}">Medisch Dagboek
             </a>
         </div>
 
