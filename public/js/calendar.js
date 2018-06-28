@@ -99,7 +99,7 @@ function displayCalendar(){
  }
 
  // building the calendar html body.
- var calendarBody = "<table class='calendar col-xs-12  col-sm-12 col-md-8'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
+ var calendarBody = "<table class='calendar col-xs-12  col-sm-12 col-md-9'> <tr class='monthNow'><th colspan='7' class='year'><span class='monthnav'>&lt;</span> "
  +monthNames[month]+" "+ year +" <span class='monthnav'>&gt;</span></th></tr>";
  calendarBody +="<tr class='dayNames'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td>"+
  "<td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
