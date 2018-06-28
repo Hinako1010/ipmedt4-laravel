@@ -19,17 +19,9 @@
 
     </head>
     <body>
-<<<<<<< HEAD
-
-    <span onclick="event.preventDefault();
-                  document.getElementById('logout-form').submit();"  class='helpicon2'><p><img height="35px" src="{{ URL::to('/icons/iconlogout.png') }}"></p></span>
-      
-  <span onclick='document.getElementById("id01").style.display="block"'  class='helpicon'><p>?</p></span>
-=======
     <span onclick='document.getElementById("id01").style.display="block"' class='helpicon'><p>?</p></span>
     <span onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();"  class='helpicon2'><p><img height="35px" src="{{ URL::to('/icons/iconlogout.png') }}"></p></span>
->>>>>>> 831df40e04fd47aeb66215ae7514e72af14e5656
     <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
@@ -39,54 +31,36 @@
                     <p style="font-weight: bold; text-align:center;">
                         Overzichtelijk maandoverzicht van je huidige medische gegevens. <br>
                     </p>
-<<<<<<< HEAD
-
-=======
                   
                 
 
                
->>>>>>> 831df40e04fd47aeb66215ae7514e72af14e5656
                <img src="{{ URL::to('/icons/iconkal.png') }} " height="150" width="213" style="margin-left:38%;">               
                     <p style="font-weight: bold; text-align:center;">
                     Waarbij je gemakkelijk per dag je symtomen kunt invullen.
                     </p>
-<<<<<<< HEAD
- 
-=======
                   
                 
 
               
->>>>>>> 831df40e04fd47aeb66215ae7514e72af14e5656
                 <img class="homeafb4" src="{{ URL::to('/icons/icongaf.png') }} " >               
                     <p style="font-weight: bold;">
                         Genereer samenvatting in de vorm van PDF van je klachten. <br>
                         Die je naar je huistart kunt sturen/ meenemen. <br>
                     </p>
-<<<<<<< HEAD
-   
-=======
                 
                   
 
           
->>>>>>> 831df40e04fd47aeb66215ae7514e72af14e5656
                 <img class="homeafb4" src="{{ URL::to('/icons/icondocter.png') }} " >
                     <p style="font-weight: bold;">
                         Hierdoor kan je huisart snel je klachten van een afgelopen periode inzien <br>
                         en je geen beter en gerichter consult geven.<br>
                     </p>
               
-<<<<<<< HEAD
-            </div>
-          </div>
-        </div>
-=======
       </div>
     </div>
   </div>
->>>>>>> 831df40e04fd47aeb66215ae7514e72af14e5656
       <div id="calendar" class="conatiner-fluid">
         <div id ="layoutrow" class="row">
           <div class="calendar-left col-xs-12 col-sm-12 col-md-3">
